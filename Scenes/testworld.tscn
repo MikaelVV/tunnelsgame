@@ -32,17 +32,17 @@ environment = SubResource("Environment_7mloq")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 20, 0, 0, 0)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3806567, 0)
 script = ExtResource("1_ywrmy")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 mesh = SubResource("CapsuleMesh_rmglt")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("ConvexPolygonShape3D_ywrmy")
 
-[node name="HeadPivot" type="Node3D" parent="CharacterBody3D"]
+[node name="HeadPivot" type="Node3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55452204, 0)
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/HeadPivot"]
+[node name="Camera3D" type="Camera3D" parent="Player/HeadPivot"]
