@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://6lg1cap6lwkl"]
+
+[ext_resource type="MeshLibrary" uid="uid://ycmrfhpck4kr" path="res://meshlibary_4_test.tres" id="1_pxcy6"]
+[ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="2_4a3xk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_8txio"]
+sky_material = SubResource("ProceduralSkyMaterial_mo0dc")
+
+[sub_resource type="Environment" id="Environment_1ww6l"]
+background_mode = 2
+sky = SubResource("Sky_8txio")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Grind Map Test" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1ww6l")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_pxcy6")
+cell_scale = 1.006
+data = {
+"cells": PackedInt32Array(2, 2, 1, 65535, 2, 1, 65535, 5, 0, 2, 8, 1441792, 5, 8, 1048576, 8, 5, 0, 5, 2, 1441792, 65535, 8, 1441793, 8, 8, 1441793, 8, 2, 1441793, 2, 5, 655362, 65532, 8, 1048578, 8, 11, 655362, 65535, 11, 0, 65532, 2, 1441792, 65535, 65535, 655360, 65529, 2, 655361, 65529, 5, 655362, 65526, 2, 1048578, 65529, 65535, 2, 65535, 65532, 2, 2, 65535, 0, 2, 65532, 0, 2, 65529, 1, 65535, 65529, 1441792, 65532, 65529, 1048578, 2, 65526, 2, 5, 65529, 1441794, 8, 65535, 2, 11, 2, 1441792, 65535, 14, 655362, 14, 2, 1441794)
+}
+
+[node name="Player" parent="." instance=ExtResource("2_4a3xk")]
+transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, -1.2919387, 0.44462347, 4.667016)
