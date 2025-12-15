@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvmqcyr54yjph"]
+[gd_scene load_steps=6 format=3 uid="uid://bvmqcyr54yjph"]
 
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="1_ywrmy"]
+[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="2_lqhb6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -30,3 +31,6 @@ use_collision = true
 
 [node name="Player" parent="." instance=ExtResource("1_ywrmy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3806567, 0)
+
+[node name="Sacv Bolt Rifle" parent="." instance=ExtResource("2_lqhb6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7820723, 1.7502079, 4.7621126)
