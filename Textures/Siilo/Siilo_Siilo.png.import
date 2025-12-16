@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpii6h3juisum"
-path.s3tc="res://.godot/imported/Siilo_Platform.png-5c5cd94d74dab3415954a7ef986fc5e8.s3tc.ctex"
+uid="uid://csxs42c0ypa16"
+path.s3tc="res://.godot/imported/Siilo_Siilo.png-722839ed9206652c2c29128b87d46d5b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "5ae820f919aaa7273da11434b6837ec9"
+"md5": "5660e85e4c522f1be6cb7aec3c1726a9"
 }
 
 [deps]
 
-source_file="res://Siilo_Platform.png"
-dest_files=["res://.godot/imported/Siilo_Platform.png-5c5cd94d74dab3415954a7ef986fc5e8.s3tc.ctex"]
+source_file="res://Textures/Siilo/Siilo_Siilo.png"
+dest_files=["res://.godot/imported/Siilo_Siilo.png-722839ed9206652c2c29128b87d46d5b.s3tc.ctex"]
 
 [params]
 

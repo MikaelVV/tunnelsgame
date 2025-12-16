@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://6lg1cap6lwkl"]
+[gd_scene load_steps=8 format=3 uid="uid://6lg1cap6lwkl"]
 
 [ext_resource type="MeshLibrary" uid="uid://ycmrfhpck4kr" path="res://meshlibary_4_test.tres" id="1_pxcy6"]
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="2_4a3xk"]
 [ext_resource type="PackedScene" uid="uid://dmyygl4tux0cn" path="res://Scenes/siilo.tscn" id="3_4a3xk"]
+[ext_resource type="PackedScene" uid="uid://cg3duepqyp2jm" path="res://Scenes/tunnel.tscn" id="4_maub5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -34,7 +35,10 @@ data = {
 }
 
 [node name="Player" parent="." instance=ExtResource("2_4a3xk")]
-transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, 115.61007, 17.090456, 6.6286707)
+transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, 132.8003, 4.8619633, 6.6286707)
 
 [node name="Siilo" parent="." instance=ExtResource("3_4a3xk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109, -5, 8)
+
+[node name="Tunnel" parent="." instance=ExtResource("4_maub5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 132.17833, 0, 4.767605)
