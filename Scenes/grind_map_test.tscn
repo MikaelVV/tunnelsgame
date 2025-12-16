@@ -2,7 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://ycmrfhpck4kr" path="res://meshlibary_4_test.tres" id="1_pxcy6"]
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="2_4a3xk"]
-[ext_resource type="PackedScene" uid="uid://cc63lubv7jhxl" path="res://Tunnel Prop/siilo.tscn" id="3_4a3xk"]
+[ext_resource type="PackedScene" uid="uid://bwfjq0ouqbimv" path="res://siilo.tscn" id="3_4a3xk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -34,7 +34,7 @@ data = {
 }
 
 [node name="Player" parent="." instance=ExtResource("2_4a3xk")]
-transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, 116.234406, 0.44462347, 16.650116)
+transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, 118.95215, 9.658517, 0.8394728)
 
 [node name="Siilo" parent="." instance=ExtResource("3_4a3xk")]
-transform = Transform3D(-3.6105607e-08, 0, -0.826, 0, 0.826, 0, 0.826, 0, -3.6105607e-08, 121.24675, 0.9451914, 17.004171)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.554054, 0, 4.4727683)
