@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bch7lk11r1pcg"
-path.s3tc="res://.godot/imported/Siilo_Siilo.png-4be33af903ac9654313254ba1fcf045f.s3tc.ctex"
+uid="uid://csxs42c0ypa16"
+path.s3tc="res://.godot/imported/Siilo_Siilo.png-1aa9eb12f86522b5da9561b53b3beb03.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Tunnel Prop/Siilo_Siilo.png"
-dest_files=["res://.godot/imported/Siilo_Siilo.png-4be33af903ac9654313254ba1fcf045f.s3tc.ctex"]
+source_file="res://Siilo_Siilo.png"
+dest_files=["res://.godot/imported/Siilo_Siilo.png-1aa9eb12f86522b5da9561b53b3beb03.s3tc.ctex"]
 
 [params]
 
