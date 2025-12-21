@@ -15,8 +15,10 @@ var gravity = 9.8
 
 @onready var head = $HeadPivot
 @onready var camera = $HeadPivot/Camera3D
+@onready var pause_menu = $"../CanvasLayer/PauseMenu"
 
 func _ready():
+	pause_menu.hide()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _unhandled_input(event):
@@ -58,6 +60,15 @@ func _physics_process(delta: float) -> void:
 	camera.transform.origin = _headbob(t_bob)
 	
 	move_and_slide()
+	escape()
+	
+func escape():
+	if Input.is_action_just_pressed("escape") and !get_tree().paused:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		pause_menu.show()
+	elif Input.is_action_just_pressed("escape") and get_tree().paused:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		pause_menu.hide()
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO

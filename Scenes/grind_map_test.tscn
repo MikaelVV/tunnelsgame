@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://6lg1cap6lwkl"]
+[gd_scene load_steps=9 format=3 uid="uid://6lg1cap6lwkl"]
 
 [ext_resource type="MeshLibrary" uid="uid://ycmrfhpck4kr" path="res://meshlibary_4_test.tres" id="1_pxcy6"]
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="2_4a3xk"]
 [ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="3_4a3xk"]
+[ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_maub5"]
+[ext_resource type="Script" uid="uid://dra3xfri63lr8" path="res://Scripts/PauseMenu.gd" id="5_cyevc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38,3 +40,12 @@ transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, -1.2919387, 0.444
 
 [node name="Sacv Bolt Rifle" parent="Player" instance=ExtResource("3_4a3xk")]
 transform = Transform3D(0.6313798, 0, -0.067709096, 0, 0.635, 0, 0.067709096, 0, 0.6313798, 0.60744935, 0.17433834, -1.1318703)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("4_maub5")]
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 7.0
+offset_bottom = 3.0
+script = ExtResource("5_cyevc")
