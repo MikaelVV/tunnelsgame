@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://c0amvwo43vim1"]
+[gd_scene load_steps=2 format=3 uid="uid://c0amvwo43vim1"]
+
+[ext_resource type="Script" uid="uid://dra3xfri63lr8" path="res://Scripts/PauseMenu.gd" id="1_emv3i"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3
@@ -8,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_emv3i")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
