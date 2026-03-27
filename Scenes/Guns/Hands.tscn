@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bbtawgptfefo7"]
+
+[node name="Hands" type="Node3D" unique_id=245947368]
+
+[node name="Model" type="Node3D" parent="." unique_id=2051261450]
