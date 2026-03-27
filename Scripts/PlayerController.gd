@@ -42,7 +42,6 @@ func _physics_process(delta: float) -> void:
 		speed = WALK_SPEED
 		
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "up", "down")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
@@ -51,24 +50,15 @@ func _physics_process(delta: float) -> void:
 			velocity.z = direction.z * speed
 		else:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 7.0)
-			velocity.z = lerp(velocity.z, direction.x * speed, delta * 7.0)
+			velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.5)
-		velocity.z = lerp(velocity.z, direction.x * speed, delta * 2.5)
+		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.5)
 		
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
 	
 	move_and_slide()
-	escape()
-	
-func escape():
-	if Input.is_action_just_pressed("escape") and !get_tree().paused:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		pause_menu.show()
-	elif Input.is_action_just_pressed("escape") and get_tree().paused:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		pause_menu.hide()
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
