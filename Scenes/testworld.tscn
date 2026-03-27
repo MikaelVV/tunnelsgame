@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bvmqcyr54yjph"]
+[gd_scene format=3 uid="uid://bvmqcyr54yjph"]
 
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="1_ywrmy"]
 [ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="2_lqhb6"]
+[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Guns Assets/pistol proto.glb" id="3_7mloq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -16,21 +17,24 @@ sky = SubResource("Sky_lqhb6")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Testworld" type="Node3D"]
+[node name="Testworld" type="Node3D" unique_id=310615401]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1102031253]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1156091561]
 environment = SubResource("Environment_7mloq")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=370091989]
 transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 20, 0, 0, 0)
 use_collision = true
 
-[node name="Player" parent="." instance=ExtResource("1_ywrmy")]
+[node name="Player" parent="." unique_id=1787192326 instance=ExtResource("1_ywrmy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3806567, 0)
 
-[node name="Sacv Bolt Rifle" parent="." instance=ExtResource("2_lqhb6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7820723, 1.7502079, 4.7621126)
+[node name="Sacv Bolt Rifle" parent="." unique_id=129609897 instance=ExtResource("2_lqhb6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7820723, 1.9975667, 4.7621126)
+
+[node name="pistol proto" parent="." unique_id=1622857441 instance=ExtResource("3_7mloq")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6.6215196, 1.9610956, 4.74128)

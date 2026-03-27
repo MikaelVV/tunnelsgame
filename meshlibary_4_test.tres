@@ -1,4 +1,4 @@
-[gd_resource type="MeshLibrary" load_steps=19 format=4 uid="uid://ycmrfhpck4kr"]
+[gd_resource type="MeshLibrary" format=4 uid="uid://ycmrfhpck4kr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f7fjw"]
 resource_name = "Material"
