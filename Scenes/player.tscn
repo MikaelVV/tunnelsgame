@@ -32,4 +32,5 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.5,
 visible = false
 
 [node name="Pistol" parent="HeadPivot/Camera3D/HandSlot" unique_id=1548776254 instance=ExtResource("4_vgqql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.235, -2.415, -3.185)
 visible = false
