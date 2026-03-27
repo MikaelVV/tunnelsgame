@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="1_ywrmy"]
 [ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="2_lqhb6"]
 [ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Guns Assets/pistol proto.glb" id="3_7mloq"]
+[ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38,3 +39,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7820723, 1.9975667, 4.7621
 
 [node name="pistol proto" parent="." unique_id=1622857441 instance=ExtResource("3_7mloq")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6.6215196, 1.9610956, 4.74128)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1933830141]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=95953639 instance=ExtResource("4_wr54j")]
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 7.0
+offset_bottom = 3.0
+metadata/_edit_use_anchors_ = true
