@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cx7l1lg5byq56"]
+
+[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Guns Assets/pistol proto.glb" id="1_3sv80"]
+
+[node name="Pistol" type="Node3D" unique_id=1548776254]
+
+[node name="Model" type="Node3D" parent="." unique_id=126089839]
+
+[node name="pistol proto" parent="Model" unique_id=782172805 instance=ExtResource("1_3sv80")]

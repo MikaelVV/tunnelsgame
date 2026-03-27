@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+@export var health = 100.0
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0

@@ -1,38 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://lvocmehlbftg"]
+[gd_scene format=3 uid="uid://lvocmehlbftg"]
 
 [ext_resource type="Script" uid="uid://c1wlco3fulwxt" path="res://Scripts/MainMenu.gd" id="1_tt5f1"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu" type="Node2D" unique_id=1300634078]
 script = ExtResource("1_tt5f1")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=717574659]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="StartButton" type="Button" parent="Control"]
+[node name="StartButton" type="Button" parent="Control" unique_id=530265219]
 layout_mode = 0
-offset_left = 405.0
+offset_left = 150.0
 offset_top = 125.0
-offset_right = 723.0
-offset_bottom = 214.0
+offset_right = 468.0005
+offset_bottom = 214.00006
 text = "Start Game"
 
-[node name="SettingsButton" type="Button" parent="Control"]
+[node name="SettingsButton" type="Button" parent="Control" unique_id=497133311]
 layout_mode = 0
-offset_left = 408.0
+offset_left = 150.0
 offset_top = 248.0
-offset_right = 724.0
-offset_bottom = 338.0
+offset_right = 466.0005
+offset_bottom = 338.00006
 text = "Options"
 
-[node name="QuitButton" type="Button" parent="Control"]
+[node name="QuitButton" type="Button" parent="Control" unique_id=1356871061]
 layout_mode = 0
-offset_left = 409.0
+offset_left = 150.0
 offset_top = 366.0
-offset_right = 725.0
-offset_bottom = 464.0
+offset_right = 466.0005
+offset_bottom = 464.00006
 text = "Quit Game"
 
 [connection signal="pressed" from="Control/StartButton" to="." method="_on_start_button_pressed"]
