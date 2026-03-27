@@ -33,9 +33,6 @@ data = {
 "cells": PackedInt32Array(2, 2, 1, 65535, 2, 1, 65535, 5, 0, 2, 8, 1441792, 5, 8, 1048576, 8, 5, 0, 5, 2, 1441792, 65535, 8, 1441793, 8, 8, 1441793, 8, 2, 1441793, 2, 5, 655362, 65532, 8, 1048578, 8, 11, 655362, 65535, 11, 0, 65532, 2, 1441792, 65535, 65535, 655360, 65529, 2, 655361, 65529, 5, 655362, 65526, 2, 1048578, 65529, 65535, 2, 65535, 65532, 2, 2, 65535, 0, 2, 65532, 0, 2, 65529, 1, 65535, 65529, 1441792, 65532, 65529, 1048578, 2, 65526, 2, 5, 65529, 1441794, 8, 65535, 2, 11, 2, 1441792, 65535, 14, 655362, 14, 2, 1441794)
 }
 
-[node name="Player" parent="." unique_id=1393582432 instance=ExtResource("2_4a3xk")]
-transform = Transform3D(0.805, 0, 0, 0, 0.805, 0, 0, 0, 0.805, -1.2919387, 0.44462347, 4.667016)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=338766555]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=502400862 instance=ExtResource("4_maub5")]
@@ -43,3 +40,6 @@ offset_left = 7.0
 offset_top = 3.0
 offset_right = 7.0
 offset_bottom = 3.0
+
+[node name="Player" parent="." unique_id=1961869043 instance=ExtResource("2_4a3xk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6437428, 0.6011971, 3.8476105)

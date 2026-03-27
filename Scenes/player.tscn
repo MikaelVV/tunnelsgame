@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://em571n5q0uyi" path="res://Scripts/PlayerController.gd" id="1_v0iea"]
 [ext_resource type="Script" uid="uid://p7vu4axbymmh" path="res://Scripts/HandController.gd" id="2_6t5aa"]
 [ext_resource type="PackedScene" uid="uid://dxt5ibfn1xk4p" path="res://Scenes/Guns/Scav_Bolt_Rifle.tscn" id="2_cvnsp"]
+[ext_resource type="PackedScene" uid="uid://cx7l1lg5byq56" path="res://Scenes/Guns/Pistol.tscn" id="4_vgqql"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_rmglt"]
 
@@ -28,4 +29,7 @@ script = ExtResource("2_6t5aa")
 
 [node name="ScavBoltRifle" parent="HeadPivot/Camera3D/HandSlot" unique_id=1118123335 instance=ExtResource("2_cvnsp")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.5, -0.5, -1.75)
+visible = false
+
+[node name="Pistol" parent="HeadPivot/Camera3D/HandSlot" unique_id=1548776254 instance=ExtResource("4_vgqql")]
 visible = false
