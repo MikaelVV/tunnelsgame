@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cx7l1lg5byq56"]
 
-[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Guns Assets/pistol proto.glb" id="1_3sv80"]
+[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Assets/Guns/pistol proto.glb" id="1_3sv80"]
 
 [node name="Pistol" type="Node3D" unique_id=1548776254]
 

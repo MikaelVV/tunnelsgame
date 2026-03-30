@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0amvwo43vim1"]
+[gd_scene format=3 uid="uid://c0amvwo43vim1"]
 
 [ext_resource type="Script" uid="uid://dra3xfri63lr8" path="res://Scripts/PauseMenu.gd" id="1_emv3i"]
 

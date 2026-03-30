@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxt5ibfn1xk4p"]
 
-[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="1_a1yns"]
+[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="1_a1yns"]
 [ext_resource type="Script" uid="uid://c6lfoj2le3kki" path="res://Scripts/GunController.gd" id="1_qg4wr"]
 
 [node name="ScavBoltRifle" type="Node3D" unique_id=1118123335]

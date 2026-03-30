@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bdhopr8kck4jv"
-path="res://.godot/imported/pistol proto.glb-f305e5765bddc9ce044190a2f0d8afac.scn"
+uid="uid://bptghv5tgautt"
+path="res://.godot/imported/Sacv Bolt Rifle.glb-3c01894b4e4ae5157deb63cb0e23b261.scn"
 
 [deps]
 
-source_file="res://Guns Assets/pistol proto.glb"
-dest_files=["res://.godot/imported/pistol proto.glb-f305e5765bddc9ce044190a2f0d8afac.scn"]
+source_file="res://Assets/Guns/Sacv Bolt Rifle.glb"
+dest_files=["res://.godot/imported/Sacv Bolt Rifle.glb-3c01894b4e4ae5157deb63cb0e23b261.scn"]
 
 [params]
 

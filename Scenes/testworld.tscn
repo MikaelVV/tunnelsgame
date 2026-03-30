@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bvmqcyr54yjph"]
 
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="1_ywrmy"]
-[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Guns Assets/Sacv Bolt Rifle.glb" id="2_lqhb6"]
-[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Guns Assets/pistol proto.glb" id="3_7mloq"]
+[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="2_lqhb6"]
+[ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Assets/Guns/pistol proto.glb" id="3_7mloq"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
