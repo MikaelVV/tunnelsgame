@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://55rawlddiso4"
-path="res://.godot/imported/Tunnel Cross.glb-afa9223103e33790da90293b40cd989f.scn"
+uid="uid://bp62goldgb30a"
+path="res://.godot/imported/Tunnel Box X_Turn.glb-d71953dc4194db80c375bae07f774248.scn"
 
 [deps]
 
-source_file="res://Tunnel Prop/Tunnel Cross.glb"
-dest_files=["res://.godot/imported/Tunnel Cross.glb-afa9223103e33790da90293b40cd989f.scn"]
+source_file="res://Tunnel Prop/Tunnel Box X_Turn.glb"
+dest_files=["res://.godot/imported/Tunnel Box X_Turn.glb-d71953dc4194db80c375bae07f774248.scn"]
 
 [params]
 
@@ -37,6 +37,13 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:X_Turn": {
+"generate/physics": true,
+"physics/shape_type": 2
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1

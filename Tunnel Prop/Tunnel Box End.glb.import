@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://w1l7a6lst2nj"
-path="res://.godot/imported/Tunnel Basic.glb-87cd72183cf0d4fd0ab619290e00dac1.scn"
+uid="uid://5ktkvbd003rt"
+path="res://.godot/imported/Tunnel Box End.glb-917cda38c749c4f489d0d0d5a69a1ae0.scn"
 
 [deps]
 
-source_file="res://Tunnel Prop/Tunnel Basic.glb"
-dest_files=["res://.godot/imported/Tunnel Basic.glb-87cd72183cf0d4fd0ab619290e00dac1.scn"]
+source_file="res://Tunnel Prop/Tunnel Box End.glb"
+dest_files=["res://.godot/imported/Tunnel Box End.glb-917cda38c749c4f489d0d0d5a69a1ae0.scn"]
 
 [params]
 
@@ -37,6 +37,13 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:End": {
+"generate/physics": true,
+"physics/shape_type": 2
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1

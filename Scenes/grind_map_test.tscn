@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://6lg1cap6lwkl"]
 
-[ext_resource type="MeshLibrary" uid="uid://ycmrfhpck4kr" path="res://meshlibary_4_test.tres" id="1_pxcy6"]
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="2_4a3xk"]
-[ext_resource type="PackedScene" uid="uid://bdp3j48mykmqo" path="res://Assets/GasMask/Gas_Mask.glb" id="4_cyevc"]
+[ext_resource type="PackedScene" uid="uid://bgrkypymo8gv8" path="res://Assets/Siilo/Siilo.glb" id="4_cyevc"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_maub5"]
+[ext_resource type="MeshLibrary" uid="uid://bbq0ddw2ife8e" path="res://Tunnel Prop/TunnelBlockLibary.tres" id="5_cyevc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -27,11 +27,11 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1914201221]
 environment = SubResource("Environment_1ww6l")
 
-[node name="GridMap" type="GridMap" parent="." unique_id=1793878160]
-mesh_library = ExtResource("1_pxcy6")
-cell_scale = 1.006
+[node name="GridMap" type="GridMap" parent="." unique_id=408452933]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+mesh_library = ExtResource("5_cyevc")
 data = {
-"cells": PackedInt32Array(2, 2, 1, 65535, 2, 1, 65535, 5, 0, 2, 8, 1441792, 5, 8, 1048576, 8, 5, 0, 5, 2, 1441792, 65535, 8, 1441793, 8, 8, 1441793, 8, 2, 1441793, 2, 5, 655362, 65532, 8, 1048578, 8, 11, 655362, 65535, 11, 0, 65532, 2, 1441792, 65535, 65535, 655360, 65529, 2, 655361, 65529, 5, 655362, 65526, 2, 1048578, 65529, 65535, 2, 65535, 65532, 2, 2, 65535, 0, 2, 65532, 0, 2, 65529, 1, 65535, 65529, 1441792, 65532, 65529, 1048578, 2, 65526, 2, 5, 65529, 1441794, 8, 65535, 2, 11, 2, 1441792, 65535, 14, 655362, 14, 2, 1441794)
+"cells": PackedInt32Array(65535, 0, 5, 65535, 1, 2, 65535, 2, 655363, 65534, 2, 3, 65534, 3, 6, 65535, 3, 1441796, 65535, 4, 1048577, 65534, 4, 655363, 65533, 4, 1048578, 65532, 4, 1048578, 65531, 4, 6, 65531, 5, 655360, 65531, 3, 655362, 65531, 2, 655362, 65531, 1, 655362, 65531, 0, 6, 65532, 0, 1441794, 65534, 0, 1441794, 65533, 0, 1441796, 65533, 1, 1048577, 65531, 65535, 2, 65531, 65534, 5, 65531, 65533, 5, 65530, 65534, 1048576, 65530, 65533, 1048576, 65532, 65533, 1441792, 65532, 65534, 1441792, 65531, 65532, 655362, 65531, 65531, 3, 65532, 65531, 1441794, 65533, 65531, 1441794, 65534, 65531, 655366, 65534, 65532, 655364, 65533, 65532, 1, 65534, 65533, 1048579, 65535, 65533, 1441795, 65535, 65534, 655362, 65535, 65535, 655362, 0, 0, 1048578, 1, 0, 1048580, 1, 65535, 1441793, 2, 0, 655366, 2, 65535, 655362, 2, 65534, 655362, 2, 1, 655360, 65534, 65530, 1441798, 65533, 65530, 1048576, 65535, 65530, 1048578, 0, 65530, 1048578, 1, 65530, 1048580, 2, 65530, 655363, 2, 65529, 3, 4, 65529, 1441795, 4, 65531, 655363, 3, 65531, 3, 3, 65532, 655363, 2, 65532, 1441798, 1, 65532, 1048576, 2, 65533, 4, 3, 65533, 655361, 3, 65529, 1048578, 4, 65530, 2, 0, 3, 1441794, 1, 3, 1441797, 1, 4, 655360, 1, 2, 0, 2, 3, 1441792)
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=338766555]
@@ -43,7 +43,7 @@ offset_right = 7.0
 offset_bottom = 3.0
 
 [node name="Player" parent="." unique_id=1961869043 instance=ExtResource("2_4a3xk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6437428, 0.6011971, 3.8476105)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01966, 3.867076, 3.8476105)
 
-[node name="Gas_Mask" parent="." unique_id=1644327987 instance=ExtResource("4_cyevc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.64671, 0, 16.927494)
+[node name="Siilo" parent="." unique_id=676671502 instance=ExtResource("4_cyevc")]
+transform = Transform3D(0.72498983, 0, 0.68875957, 0, 1, 0, -0.68875957, 0, 0.72498983, -55.7715, -12.300388, 93.281906)
