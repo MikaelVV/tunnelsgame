@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc2do7ix0csm4"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Head Color.png-f3726af72cdda8841833d085f5133db5.s3tc.ctex"
+uid="uid://ckqe00bk4l5v4"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Legs Color.png-499e421790c664ff08961c31910c02a9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2459d6acb72ed953376233e85c9fd6c2"
+"md5": "ee70d68e5b09b18603311a939a77d3e7"
 }
 
 [deps]
 
-source_file="res://Characters/ukko solttu_Ucupaint Head Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Head Color.png-f3726af72cdda8841833d085f5133db5.s3tc.ctex"]
+source_file="res://Characters/Character Texstures/ukko solttu_Ucupaint Legs Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Legs Color.png-499e421790c664ff08961c31910c02a9.s3tc.ctex"]
 
 [params]
 

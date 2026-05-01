@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckqe00bk4l5v4"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Legs Color.png-395ee19104635ba123fe983515a7a798.s3tc.ctex"
+uid="uid://bgpuiktn87q35"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-be6d8500e14d4b374854de4148dba2f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "ee70d68e5b09b18603311a939a77d3e7"
+"md5": "69b7a997833b643b3905580421b50055"
 }
 
 [deps]
 
-source_file="res://Characters/ukko solttu_Ucupaint Legs Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Legs Color.png-395ee19104635ba123fe983515a7a798.s3tc.ctex"]
+source_file="res://Characters/Character Texstures/ukko solttu_Ucupaint Chest Armor Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-be6d8500e14d4b374854de4148dba2f5.s3tc.ctex"]
 
 [params]
 

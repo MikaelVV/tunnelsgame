@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mwfnlu63ks3f"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Arms Color.png-aad17ba3ad5cc5b82b3fe8385c9d8663.s3tc.ctex"
+uid="uid://c503w26v8wyyj"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Belt Color.png-7604ae422210d4dbe2f9a15619b95bfd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "475a561c42e698d12a8cb48935a019c8"
+"md5": "a3a5b4b6be7058c5a68727ff3d5dccfc"
 }
 
 [deps]
 
-source_file="res://Characters/ukko solttu_Ucupaint Arms Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Arms Color.png-aad17ba3ad5cc5b82b3fe8385c9d8663.s3tc.ctex"]
+source_file="res://Characters/Character Texstures/ukko solttu_Ucupaint Belt Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Belt Color.png-7604ae422210d4dbe2f9a15619b95bfd.s3tc.ctex"]
 
 [params]
 

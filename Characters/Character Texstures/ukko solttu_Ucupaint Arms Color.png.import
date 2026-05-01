@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b50j7npbhqhdy"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-f54c378d04f330474817ecdf20759740.s3tc.ctex"
+uid="uid://mwfnlu63ks3f"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Arms Color.png-b4348c94d0f5a19241810cd340ddb0ad.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "823d6e0884435d07dd5b9706bfa42a01"
+"md5": "475a561c42e698d12a8cb48935a019c8"
 }
 
 [deps]
 
-source_file="res://Characters/ukko solttu_Ucupaint Mask Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-f54c378d04f330474817ecdf20759740.s3tc.ctex"]
+source_file="res://Characters/Character Texstures/ukko solttu_Ucupaint Arms Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Arms Color.png-b4348c94d0f5a19241810cd340ddb0ad.s3tc.ctex"]
 
 [params]
 
