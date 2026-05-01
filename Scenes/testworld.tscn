@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="2_lqhb6"]
 [ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Assets/Guns/pistol proto.glb" id="3_7mloq"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="5_qmhdh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -48,3 +49,6 @@ offset_top = 3.0
 offset_right = 7.0
 offset_bottom = 3.0
 metadata/_edit_use_anchors_ = true
+
+[node name="ukko solttu" parent="." unique_id=1549127524 instance=ExtResource("5_qmhdh")]
+transform = Transform3D(-0.9922107, 0, 0.12457127, 0, 1, 0, -0.12457127, 0, -0.9922107, 5.8243065, 0.25448304, 9.191877)

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bgrkypymo8gv8" path="res://Assets/Siilo/Siilo.glb" id="4_cyevc"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_maub5"]
 [ext_resource type="MeshLibrary" uid="uid://bbq0ddw2ife8e" path="res://Tunnel Prop/TunnelBlockLibary.tres" id="5_cyevc"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="5_oevta"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -47,3 +48,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01966, 3.867076, 3.8476105
 
 [node name="Siilo" parent="." unique_id=676671502 instance=ExtResource("4_cyevc")]
 transform = Transform3D(0.72498983, 0, 0.68875957, 0, 1, 0, -0.68875957, 0, 0.72498983, -55.7715, -12.300388, 93.281906)
+
+[node name="ukko solttu" parent="." unique_id=1549127524 instance=ExtResource("5_oevta")]
+transform = Transform3D(0.7775193, 0, 0.6288591, 0, 1, 0, -0.6288591, 0, 0.7775193, 15.573857, 2.4044814, -7.453697)
