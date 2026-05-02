@@ -9,8 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Sandbags Curved.glb" id="7_ts8so"]
 [ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Sandbags Loose.glb" id="8_wus7f"]
 [ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Sandbags Line.glb" id="9_f5b1f"]
-[ext_resource type="PackedScene" uid="uid://cxgog0np7fmab" path="res://Environment Props/Ruble Long.glb" id="10_f5b1f"]
-[ext_resource type="PackedScene" uid="uid://ddmm8hodb2wui" path="res://Environment Props/Ruble Small.glb" id="11_10t6g"]
+[ext_resource type="PackedScene" uid="uid://c66d5ri5ta3gj" path="res://Environment Props/Junk Fence1.glb" id="10_wus7f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -169,7 +168,7 @@ transform = Transform3D(0.47190458, 0, -0.8816496, 0, 1, 0, 0.8816496, 0, 0.4719
 transform = Transform3D(-0.93351156, 0, -0.35854727, 0, 1, 0, 0.35854727, 0, -0.93351156, 11.881261, 2.4419434, 9.2369995)
 
 [node name="Sandbags Line" parent="NavigationRegion3D/Sandbags node" unique_id=702111046 instance=ExtResource("9_f5b1f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.686302, 2.4262865, 2.7165475)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.686302, 2.4262865, 2.864342)
 
 [node name="Sandbags Line2" parent="NavigationRegion3D/Sandbags node" unique_id=511221111 instance=ExtResource("9_f5b1f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19949, 2.426287, 2.8255384)
@@ -195,11 +194,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.738039, 2.5729568, -66.224
 [node name="Marker3D2" type="Marker3D" parent="." unique_id=175218918]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.83841, 3.0771067, 64.75258)
 
-[node name="Ruble Long" parent="." unique_id=41338149 instance=ExtResource("10_f5b1f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8966355, 2.3904438, 3.0092425)
+[node name="Junk Fence1" parent="." unique_id=202818695 instance=ExtResource("10_wus7f")]
+transform = Transform3D(-0.0761274, 0, -0.9970981, 0, 1, 0, 0.9970981, 0, -0.0761274, -51.081787, 2.4169328, 9.409297)
 
-[node name="Ruble Small" parent="." unique_id=667773893 instance=ExtResource("11_10t6g")]
-transform = Transform3D(0.71389854, 0, -0.7002492, 0, 1, 0, 0.7002492, 0, 0.71389854, 9.568227, 2.4400969, 8.810878)
+[node name="Junk Fence2" parent="." unique_id=1555172828 instance=ExtResource("10_wus7f")]
+transform = Transform3D(0.1168787, 0, -0.9931462, 0, 1, 0, 0.9931462, 0, 0.1168787, 11.382817, 2.4169333, 3.8493314)
+
+[node name="Junk Fence3" parent="." unique_id=891797640 instance=ExtResource("10_wus7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.092543, 2.4386246, 2.4549785)
 
 [connection signal="target_reached" from="Soldier01/NavigationAgent3D" to="Soldier01" method="_on_navigation_agent_3d_target_reached"]
 [connection signal="target_reached" from="Soldier02/NavigationAgent3D" to="Soldier02" method="_on_navigation_agent_3d_target_reached"]
