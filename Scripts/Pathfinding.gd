@@ -6,6 +6,7 @@ var acceleration = 10
 @onready var navigationAgent := $NavigationAgent3D
 @onready var target := $"../Marker3D"
 @onready var targetNext := $"../Marker3D2"
+@onready var model := $"Model/ukko solttu"
 
 
 func _physics_process(delta):
@@ -18,7 +19,9 @@ func _physics_process(delta):
 	
 	velocity = velocity.lerp(direction * speed, acceleration * delta)
 	
-	if(navigationAgent.is_target_reached() == true):
+	look_at(target.global_position)
+	
+	if(navigationAgent.is_target_reached()):
 		nextTarget(delta)
 	else:
 		navigationAgent.target_position = target.global_position
@@ -26,6 +29,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 func nextTarget(_delta):
-	
-	navigationAgent.target_position = targetNext.global_position
+	target.global_position = targetNext.global_position
+	navigationAgent.target_position = target.global_position
+	look_at(target.global_position)
 	
