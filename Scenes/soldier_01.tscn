@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cqdyetqma0ec2"]
+
+[ext_resource type="Script" uid="uid://bf64cs428orcb" path="res://Scripts/Pathfinding.gd" id="1_ixauc"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="2_mt5mh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oevta"]
+
+[node name="Soldier01" type="CharacterBody3D" unique_id=499111874]
+script = ExtResource("1_ixauc")
+
+[node name="Model" type="Node3D" parent="." unique_id=486358429]
+
+[node name="ukko solttu" parent="Model" unique_id=1545959733 instance=ExtResource("2_mt5mh")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=578802429]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=877035488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
+shape = SubResource("CapsuleShape3D_oevta")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=825920995]
+target_desired_distance = 0.8
+path_height_offset = 0.35
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
+
+[connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
