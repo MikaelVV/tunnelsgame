@@ -78,11 +78,14 @@ func move():
 func attack():
 	print("attacking!")
 
+#NPC pystyy liikkumaan vasemmalle, tai oikealle välillä 2.5 - 5.5 metriä. Vector2, eli Y on 0 value
+#Koska ei tietenkään haluta, että sotilaat lentää (vielä).
 func new_target() -> Vector3:
 	var offset_x = randf_range(2.5, 5.5) * (-1 if randf() < 0.5 else 1)
 	var offset_z = randf_range(2.5, 5.5) * (-1 if randf() < 0.5 else 1)
 	return global_transform.origin + Vector3(offset_x, 0, offset_z)
 
+#Kun NPC pääsee kohteeseensa, niin state muuttuu taas idleksi ja alkaa etsimään uutta patrollaus kohdetta.
 func _on_navigation_agent_3d_target_reached() -> void:
 	print("reached target!")
 	state = States.IDLE
