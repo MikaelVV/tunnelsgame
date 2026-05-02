@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Sandbags Line.glb" id="7_6gvke"]
 [ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Sandbags Curved.glb" id="8_hgtst"]
 [ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Sandbags Loose.glb" id="9_yvcmx"]
+[ext_resource type="PackedScene" uid="uid://cxgog0np7fmab" path="res://Environment Props/Ruble Long.glb" id="10_yvcmx"]
+[ext_resource type="PackedScene" uid="uid://ddmm8hodb2wui" path="res://Environment Props/Ruble Small.glb" id="11_4qck5"]
+[ext_resource type="PackedScene" uid="uid://c66d5ri5ta3gj" path="res://Environment Props/Junk Fence1.glb" id="12_4qck5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -79,3 +82,12 @@ transform = Transform3D(0.45950237, 0, 0.88817656, 0, 1, 0, -0.88817656, 0, 0.45
 
 [node name="Sandbags Loose" parent="." unique_id=411200030 instance=ExtResource("9_yvcmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.031707, 0.29194432, 5.646879)
+
+[node name="Ruble Long" parent="." unique_id=2092324546 instance=ExtResource("10_yvcmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.037105, 0.41954565, 3.6560345)
+
+[node name="Ruble Small" parent="." unique_id=667773893 instance=ExtResource("11_4qck5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.859878, 0.30317038, 1.8213301)
+
+[node name="Junk Fence1" parent="." unique_id=202818695 instance=ExtResource("12_4qck5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2905295, 0.26693463, 9.810501)
