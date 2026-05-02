@@ -6,6 +6,9 @@
 [ext_resource type="MeshLibrary" uid="uid://bbq0ddw2ife8e" path="res://Tunnel Prop/TunnelBlockLibary.tres" id="5_cyevc"]
 [ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="5_oevta"]
 [ext_resource type="Script" uid="uid://bf64cs428orcb" path="res://Scripts/Pathfinding.gd" id="6_oevta"]
+[ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Sandbags Curved.glb" id="7_ts8so"]
+[ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Sandbags Loose.glb" id="8_wus7f"]
+[ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Sandbags Line.glb" id="9_f5b1f"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -87,3 +90,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.738039, 2.5729568, -66.224
 
 [node name="Marker3D2" type="Marker3D" parent="." unique_id=175218918]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.83841, 3.0771067, 64.75258)
+
+[node name="Sandbags node" type="Node3D" parent="." unique_id=1380244897]
+
+[node name="Sandbags Curved" parent="Sandbags node" unique_id=1092270437 instance=ExtResource("7_ts8so")]
+transform = Transform3D(0.47190458, 0, -0.8816496, 0, 1, 0, 0.8816496, 0, 0.47190458, 12.120937, 2.4262865, 5.076672)
+
+[node name="Sandbags Loose" parent="Sandbags node" unique_id=411200030 instance=ExtResource("8_wus7f")]
+transform = Transform3D(-0.93351156, 0, -0.35854727, 0, 1, 0, 0.35854727, 0, -0.93351156, 11.881261, 2.4419434, 9.2369995)
+
+[node name="Sandbags Line" parent="Sandbags node" unique_id=702111046 instance=ExtResource("9_f5b1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.686302, 2.4262865, 2.7165475)
+
+[node name="Sandbags Line2" parent="Sandbags node" unique_id=511221111 instance=ExtResource("9_f5b1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19949, 2.426287, 2.8255384)
+
+[node name="Sandbags Line3" parent="Sandbags node" unique_id=861170778 instance=ExtResource("9_f5b1f")]
+transform = Transform3D(0.08896383, 0, 0.99603486, 0, 1, 0, -0.99603486, 0, 0.08896383, -50.64354, 2.4262865, 8.647919)
+
+[node name="Sandbags Curved2" parent="Sandbags node" unique_id=1682872109 instance=ExtResource("7_ts8so")]
+transform = Transform3D(0.37441242, 0, 0.9272623, 0, 1, 0, -0.9272623, 0, 0.37441242, -45.93503, 2.4262865, 5.5688157)
+
+[node name="Sandbags Line4" parent="Sandbags node" unique_id=139081752 instance=ExtResource("9_f5b1f")]
+transform = Transform3D(0.07445658, 0, 0.9972243, 0, 1, 0, -0.9972243, 0, 0.07445658, -50.919964, 2.4262867, 11.984634)
+
+[node name="Sandbags Line5" parent="Sandbags node" unique_id=1724220096 instance=ExtResource("9_f5b1f")]
+transform = Transform3D(0.06879889, 0, 0.99763054, 0, 1, 0, -0.99763054, 0, 0.06879889, -50.708923, 3.5385904, 10.0641165)
+
+[node name="Sandbags Loose2" parent="Sandbags node" unique_id=1992396053 instance=ExtResource("8_wus7f")]
+transform = Transform3D(0.8271296, 0, 0.5620112, 0, 1, 0, -0.5620112, 0, 0.8271296, -51.644665, 2.441944, 10.305739)

@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
 [ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="5_qmhdh"]
 [ext_resource type="PackedScene" uid="uid://bdp3j48mykmqo" path="res://Assets/GasMask/Gas_Mask.glb" id="6_ojwke"]
+[ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Sandbags Line.glb" id="7_6gvke"]
+[ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Sandbags Curved.glb" id="8_hgtst"]
+[ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Sandbags Loose.glb" id="9_yvcmx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -67,3 +70,12 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.16
 [node name="MeshInstance3D" type="MeshInstance3D" parent="190cm" unique_id=577660569]
 transform = Transform3D(1, 0, 0, 0, 1.9, 0, 0, 0, 1, 7.9444704, 1.2048076, 9.23299)
 mesh = SubResource("BoxMesh_ojwke")
+
+[node name="Sandbags Line" parent="." unique_id=702111046 instance=ExtResource("7_6gvke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5382595, 0.27628803, 9.9629755)
+
+[node name="Sandbags Curved" parent="." unique_id=1092270437 instance=ExtResource("8_hgtst")]
+transform = Transform3D(0.45950237, 0, 0.88817656, 0, 1, 0, -0.88817656, 0, 0.45950237, 11.630801, 0.27628785, 8.669349)
+
+[node name="Sandbags Loose" parent="." unique_id=411200030 instance=ExtResource("9_yvcmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.031707, 0.29194432, 5.646879)
