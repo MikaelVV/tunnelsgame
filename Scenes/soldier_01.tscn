@@ -24,7 +24,6 @@ shape = SubResource("CapsuleShape3D_oevta")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=825920995]
 target_desired_distance = 0.8
 path_height_offset = 0.35
-path_postprocessing = 1
 avoidance_enabled = true
 debug_enabled = true
 

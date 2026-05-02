@@ -1,7 +1,9 @@
 extends CharacterBody3D
 
-var speed = 3
 var acceleration = 10
+
+@export var health = 100
+@export var speed = 3
 
 @onready var navigationAgent := $NavigationAgent3D
 #@onready var target := $"../Marker3D"
@@ -10,9 +12,7 @@ var acceleration = 10
 @onready var detection_area := $"Area3D"
 @onready var player := %"Player"
 
-var enemies = []
-
-enum States { IDLE, WAITING, MOVE, ATTACK}
+enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT}
 var state : States = States.IDLE
 
 var idle_wait_time: float = 3.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
@@ -39,6 +39,8 @@ func _physics_process(delta):
 			move()
 		States.ATTACK:
 			attack()
+		States.RETREAT:
+			retreat()
 	
 	#if(navigationAgent.is_target_reached()):
 		#nextTarget(delta)
@@ -88,6 +90,10 @@ func attack():
 	velocity = direction * speed
 	look_at(navigationAgent.get_next_path_position())
 	print("attacking!")
+	
+func retreat():
+	if health <= 25:
+		print("retreating!")
 
 #NPC pystyy liikkumaan vasemmalle, tai oikealle välillä 2.5 - 5.5 metriä. Vector2, eli Y on 0 value
 #Koska ei tietenkään haluta, että sotilaat lentää (vielä).
@@ -101,13 +107,13 @@ func _on_navigation_agent_3d_target_reached() -> void:
 	print("reached target!")
 	state = States.IDLE
 
-
+#Katsoo onko pelaaja näköetäisyydessä ja jos on, niin hyökkää.
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("Player"):
 		attack()
 		state = States.ATTACK
 
-
+#Pelaajan päästyä pois näköetäisyydeltä, vihollinen palaa takaisin idleen.
 func _on_area_3d_body_exited(body: Node3D) -> void:
 	if body.is_in_group("Player"):
 		state = States.IDLE

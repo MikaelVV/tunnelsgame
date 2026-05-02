@@ -61,10 +61,10 @@ transform = Transform3D(0.72498983, 0, 0.68875957, 0, 1, 0, -0.68875957, 0, 0.72
 [node name="ukko solttu" parent="." unique_id=1549127524 instance=ExtResource("5_oevta")]
 transform = Transform3D(0.7775193, 0, 0.6288591, 0, 1, 0, -0.6288591, 0, 0.7775193, 15.573857, 2.4044814, -7.453697)
 
-[node name="Soldier01" parent="." unique_id=499111874 instance=ExtResource("5_f5b1f")]
+[node name="Soldier01" parent="." unique_id=499111874 groups=["Enemies"] instance=ExtResource("5_f5b1f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.704573, 2.5091364, 7.28833)
 
-[node name="Soldier02" type="CharacterBody3D" parent="." unique_id=1297574809]
+[node name="Soldier02" type="CharacterBody3D" parent="." unique_id=1297574809 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.780159, 2.7207446, 14.57666)
 script = ExtResource("6_oevta")
 
@@ -86,7 +86,7 @@ path_postprocessing = 1
 avoidance_enabled = true
 debug_enabled = true
 
-[node name="Soldier03" type="CharacterBody3D" parent="." unique_id=1376371824]
+[node name="Soldier03" type="CharacterBody3D" parent="." unique_id=1376371824 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.814785, 2.7207446, 6.6344814)
 script = ExtResource("6_oevta")
 
@@ -108,7 +108,7 @@ path_postprocessing = 1
 avoidance_enabled = true
 debug_enabled = true
 
-[node name="Soldier04" type="CharacterBody3D" parent="." unique_id=852398799]
+[node name="Soldier04" type="CharacterBody3D" parent="." unique_id=852398799 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.240643, 2.7207446, 8.319054)
 script = ExtResource("6_oevta")
 

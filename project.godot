@@ -29,6 +29,11 @@ window/size/mode=3
 
 project/assembly_name="tunnelsgame"
 
+[global_group]
+
+Enemies=""
+Player=""
+
 [input]
 
 up={
