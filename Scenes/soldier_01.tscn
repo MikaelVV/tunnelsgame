@@ -5,6 +5,8 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oevta"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ixauc"]
+
 [node name="Soldier01" type="CharacterBody3D" unique_id=499111874]
 script = ExtResource("1_ixauc")
 
@@ -25,5 +27,11 @@ path_height_offset = 0.35
 path_postprocessing = 1
 avoidance_enabled = true
 debug_enabled = true
+
+[node name="Area3D" type="Area3D" parent="." unique_id=860981831]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 1.3330139, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1852754985]
+shape = SubResource("BoxShape3D_ixauc")
 
 [connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
