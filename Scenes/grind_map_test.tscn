@@ -58,7 +58,7 @@ transform = Transform3D(0.72498983, 0, 0.68875957, 0, 1, 0, -0.68875957, 0, 0.72
 transform = Transform3D(0.7775193, 0, 0.6288591, 0, 1, 0, -0.6288591, 0, 0.7775193, 15.573857, 2.4044814, -7.453697)
 
 [node name="Soldier01" type="CharacterBody3D" parent="." unique_id=409132369]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.01243, 2.5091364, -7.9594913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.704573, 2.5091364, 7.28833)
 script = ExtResource("6_oevta")
 
 [node name="Model" type="Node3D" parent="Soldier01" unique_id=1642963845]
@@ -73,10 +73,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
 shape = SubResource("CapsuleShape3D_oevta")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="Soldier01" unique_id=283287604]
-target_desired_distance = 0.25
+target_desired_distance = 0.8
 path_height_offset = 0.35
 path_postprocessing = 1
 avoidance_enabled = true
+debug_enabled = true
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=389501056]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0368028, 5.3561063)
@@ -124,3 +125,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.738039, 2.5729568, -66.224
 
 [node name="Marker3D2" type="Marker3D" parent="." unique_id=175218918]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.83841, 3.0771067, 64.75258)
+
+[connection signal="target_reached" from="Soldier01/NavigationAgent3D" to="Soldier01" method="_on_navigation_agent_3d_target_reached"]
