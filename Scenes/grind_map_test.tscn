@@ -51,7 +51,8 @@ offset_top = 3.0
 offset_right = 7.0
 offset_bottom = 3.0
 
-[node name="Player" parent="." unique_id=1961869043 instance=ExtResource("2_4a3xk")]
+[node name="Player" parent="." unique_id=1961869043 groups=["Player"] instance=ExtResource("2_4a3xk")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01966, 3.867076, 3.8476105)
 
 [node name="Siilo" parent="." unique_id=676671502 instance=ExtResource("4_cyevc")]
