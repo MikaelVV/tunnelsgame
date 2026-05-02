@@ -79,6 +79,72 @@ path_postprocessing = 1
 avoidance_enabled = true
 debug_enabled = true
 
+[node name="Soldier02" type="CharacterBody3D" parent="." unique_id=1297574809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.780159, 2.7207446, 14.57666)
+script = ExtResource("6_oevta")
+
+[node name="Model" type="Node3D" parent="Soldier02" unique_id=262179125]
+
+[node name="ukko solttu" parent="Soldier02/Model" unique_id=194558249 instance=ExtResource("5_oevta")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Soldier02" unique_id=628366066]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier02" unique_id=2017492850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
+shape = SubResource("CapsuleShape3D_oevta")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Soldier02" unique_id=921565159]
+target_desired_distance = 0.8
+path_height_offset = 0.35
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
+
+[node name="Soldier03" type="CharacterBody3D" parent="." unique_id=1376371824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.814785, 2.7207446, 6.6344814)
+script = ExtResource("6_oevta")
+
+[node name="Model" type="Node3D" parent="Soldier03" unique_id=908177561]
+
+[node name="ukko solttu" parent="Soldier03/Model" unique_id=153540583 instance=ExtResource("5_oevta")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Soldier03" unique_id=1915652252]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier03" unique_id=1836653653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
+shape = SubResource("CapsuleShape3D_oevta")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Soldier03" unique_id=2025838547]
+target_desired_distance = 0.8
+path_height_offset = 0.35
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
+
+[node name="Soldier04" type="CharacterBody3D" parent="." unique_id=852398799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.240643, 2.7207446, 8.319054)
+script = ExtResource("6_oevta")
+
+[node name="Model" type="Node3D" parent="Soldier04" unique_id=64417426]
+
+[node name="ukko solttu" parent="Soldier04/Model" unique_id=707736776 instance=ExtResource("5_oevta")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Soldier04" unique_id=19602412]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier04" unique_id=1730076669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
+shape = SubResource("CapsuleShape3D_oevta")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Soldier04" unique_id=1921400795]
+target_desired_distance = 0.8
+path_height_offset = 0.35
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
+
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=389501056]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0368028, 5.3561063)
 navigation_mesh = SubResource("NavigationMesh_oevta")
@@ -127,3 +193,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.738039, 2.5729568, -66.224
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.83841, 3.0771067, 64.75258)
 
 [connection signal="target_reached" from="Soldier01/NavigationAgent3D" to="Soldier01" method="_on_navigation_agent_3d_target_reached"]
+[connection signal="target_reached" from="Soldier02/NavigationAgent3D" to="Soldier02" method="_on_navigation_agent_3d_target_reached"]
+[connection signal="target_reached" from="Soldier03/NavigationAgent3D" to="Soldier03" method="_on_navigation_agent_3d_target_reached"]
+[connection signal="target_reached" from="Soldier04/NavigationAgent3D" to="Soldier04" method="_on_navigation_agent_3d_target_reached"]
