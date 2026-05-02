@@ -7,10 +7,6 @@ var acceleration = 10
 #@onready var target := $"../Marker3D"
 @onready var targetNext := $"../Marker3D2"
 @onready var model := $"Model/ukko solttu"
-@onready var detection_area := $"Area3D"
-@onready var player := %"Player"
-
-var enemies = []
 
 enum States { IDLE, WAITING, MOVE, ATTACK}
 var state : States = States.IDLE
@@ -80,13 +76,6 @@ func move():
 	velocity = direction * speed
 	
 func attack():
-	var current_position = global_transform.origin
-	var get_player_position = player.position
-	var next_position = navigationAgent.get_next_path_position()
-	var direction = (next_position - current_position).normalized() 
-	navigationAgent.target_position = get_player_position
-	velocity = direction * speed
-	look_at(navigationAgent.get_next_path_position())
 	print("attacking!")
 
 #NPC pystyy liikkumaan vasemmalle, tai oikealle välillä 2.5 - 5.5 metriä. Vector2, eli Y on 0 value
@@ -100,14 +89,3 @@ func new_target() -> Vector3:
 func _on_navigation_agent_3d_target_reached() -> void:
 	print("reached target!")
 	state = States.IDLE
-
-
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.is_in_group("Player"):
-		attack()
-		state = States.ATTACK
-
-
-func _on_area_3d_body_exited(body: Node3D) -> void:
-	if body.is_in_group("Player"):
-		state = States.IDLE
