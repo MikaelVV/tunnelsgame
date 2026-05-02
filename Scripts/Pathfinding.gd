@@ -19,7 +19,8 @@ func _physics_process(delta):
 	
 	velocity = velocity.lerp(direction * speed, acceleration * delta)
 	
-	look_at(target.global_position)
+	#target.global_position. PS. Tän kanssa pitää vielä kikkailla, että se käännös tapahtuu sulavasti
+	look_at(navigationAgent.get_next_path_position())
 	
 	if(navigationAgent.is_target_reached()):
 		nextTarget(delta)

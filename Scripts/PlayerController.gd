@@ -42,6 +42,10 @@ func _physics_process(delta: float) -> void:
 	else:
 		speed = WALK_SPEED
 		
+	# inventory koodi kesken.
+	if Input.is_action_just_pressed("inventory"):
+		return
+		
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("left", "right", "up", "down")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

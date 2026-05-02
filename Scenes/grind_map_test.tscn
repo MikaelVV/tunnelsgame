@@ -69,6 +69,7 @@ shape = SubResource("CapsuleShape3D_oevta")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="Soldier01" unique_id=283287604]
 target_desired_distance = 2.5
+path_postprocessing = 1
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=389501056]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0368028, 5.3561063)
