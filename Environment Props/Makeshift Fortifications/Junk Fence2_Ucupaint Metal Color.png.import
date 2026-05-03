@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvnir1jslphwd"
-path.s3tc="res://.godot/imported/Ruble Long_Ucupaint Ruble Color.png-e505addf838f908b2e49f454dedee6fd.s3tc.ctex"
+uid="uid://crag20hi883d5"
+path.s3tc="res://.godot/imported/Junk Fence2_Ucupaint Metal Color.png-166fc193595e63fcebdc3a397fdc1ccf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "12cb7efe72f073ddbbc53628b0872fac"
+"md5": "57763822c87f80879185b85f1658b9f5"
 }
 
 [deps]
 
-source_file="res://Environment Props/Ruble/Ruble Long_Ucupaint Ruble Color.png"
-dest_files=["res://.godot/imported/Ruble Long_Ucupaint Ruble Color.png-e505addf838f908b2e49f454dedee6fd.s3tc.ctex"]
+source_file="res://Environment Props/Makeshift Fortifications/Junk Fence2_Ucupaint Metal Color.png"
+dest_files=["res://.godot/imported/Junk Fence2_Ucupaint Metal Color.png-166fc193595e63fcebdc3a397fdc1ccf.s3tc.ctex"]
 
 [params]
 

@@ -9,10 +9,12 @@
 [ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Military/Sandbags Line.glb" id="7_6gvke"]
 [ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Military/Sandbags Curved.glb" id="8_hgtst"]
 [ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Military/Sandbags Loose.glb" id="9_yvcmx"]
-[ext_resource type="PackedScene" uid="uid://cxgog0np7fmab" path="res://Environment Props/Ruble/Ruble Long.glb" id="10_yvcmx"]
+[ext_resource type="PackedScene" uid="uid://cmnyd3i60e5dp" path="res://Environment Props/Ruble/Ruble Long.glb" id="10_yvcmx"]
 [ext_resource type="PackedScene" uid="uid://ddmm8hodb2wui" path="res://Environment Props/Ruble/Ruble Small.glb" id="11_4qck5"]
 [ext_resource type="PackedScene" uid="uid://c66d5ri5ta3gj" path="res://Environment Props/Makeshift Fortifications/Junk Fence1.glb" id="12_4qck5"]
 [ext_resource type="PackedScene" uid="uid://d0m43i3mr8j4n" path="res://Environment Props/Makeshift Fortifications/Junk Fence Corner.glb" id="13_rhgud"]
+[ext_resource type="PackedScene" uid="uid://y55pue8swwll" path="res://Environment Props/Makeshift Fortifications/Junk Fence2.glb" id="14_j3qlm"]
+[ext_resource type="PackedScene" uid="uid://c8rboc2od5gss" path="res://Environment Props/Military/Sandbags Single.glb" id="15_8rmwq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -40,8 +42,9 @@ shadow_enabled = true
 environment = SubResource("Environment_7mloq")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=370091989]
-transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 20, 0, 0, 0)
+transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 20, 5.496826, 0, 0)
 use_collision = true
+size = Vector3(1.5496826, 1, 1)
 
 [node name="Player" parent="." unique_id=1787192326 instance=ExtResource("1_ywrmy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3806567, 0)
@@ -75,23 +78,37 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.16
 transform = Transform3D(1, 0, 0, 0, 1.9, 0, 0, 0, 1, 7.9444704, 1.2048076, 9.23299)
 mesh = SubResource("BoxMesh_ojwke")
 
-[node name="Sandbags Line" parent="." unique_id=606488010 instance=ExtResource("7_6gvke")]
+[node name="props" type="Node3D" parent="." unique_id=1440118135]
+
+[node name="Sandbags Line" parent="props" unique_id=606488010 instance=ExtResource("7_6gvke")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5382595, 0.27628803, 9.9629755)
 
-[node name="Sandbags Curved" parent="." unique_id=1192134581 instance=ExtResource("8_hgtst")]
-transform = Transform3D(0.45950237, 0, 0.88817656, 0, 1, 0, -0.88817656, 0, 0.45950237, 11.630801, 0.27628785, 8.669349)
+[node name="Sandbags Curved" parent="props" unique_id=1192134581 instance=ExtResource("8_hgtst")]
+transform = Transform3D(0.45950237, 0, 0.88817656, 0, 1, 0, -0.88817656, 0, 0.45950237, 11.4776745, 0.27628785, 8.667352)
 
-[node name="Sandbags Loose" parent="." unique_id=886156291 instance=ExtResource("9_yvcmx")]
+[node name="Sandbags Loose" parent="props" unique_id=886156291 instance=ExtResource("9_yvcmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.031707, 0.29194432, 5.646879)
 
-[node name="Ruble Long" parent="." unique_id=2076099086 instance=ExtResource("10_yvcmx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.037105, 0.41954565, 3.6560345)
-
-[node name="Ruble Small" parent="." unique_id=1915955393 instance=ExtResource("11_4qck5")]
+[node name="Ruble Small" parent="props" unique_id=1915955393 instance=ExtResource("11_4qck5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.859878, 0.30317038, 1.8213301)
 
-[node name="Junk Fence1" parent="." unique_id=1764621960 instance=ExtResource("12_4qck5")]
+[node name="Junk Fence1" parent="props" unique_id=1764621960 instance=ExtResource("12_4qck5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2905295, 0.26693463, 9.810501)
 
-[node name="Junk Fence Corner" parent="." unique_id=2117326474 instance=ExtResource("13_rhgud")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70876694, 0.26693463, 9.81552)
+[node name="Junk Fence Corner" parent="props" unique_id=2117326474 instance=ExtResource("13_rhgud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6493685, 0.26693463, 9.81552)
+
+[node name="Junk Fence2" parent="props" unique_id=1954585110 instance=ExtResource("14_j3qlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.583321, 0.26693463, 9.837067)
+
+[node name="Sandbags Single" parent="props" unique_id=1289636017 instance=ExtResource("15_8rmwq")]
+transform = Transform3D(0.9999546, 0.009529353, 0, -0.009529353, 0.9999546, 0, 0, 0, 1, 9.274524, 0.6425959, 10.009296)
+
+[node name="Sandbags Single2" parent="props" unique_id=1997139626 instance=ExtResource("15_8rmwq")]
+transform = Transform3D(0.9785305, 0, 0.20610172, 0, 1, 0, -0.20610172, 0, 0.9785305, 9.825285, 0.9779997, 10.021869)
+
+[node name="Sandbags Single3" parent="props" unique_id=1974743219 instance=ExtResource("15_8rmwq")]
+transform = Transform3D(-0.9954795, 0, 0.09497704, 0, 1, 0, -0.09497704, 0, -0.9954795, 8.730127, 0.97741747, 10.02791)
+
+[node name="Ruble Long" parent="." unique_id=484506441 instance=ExtResource("10_yvcmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.939833, 0.3290746, 3.612691)

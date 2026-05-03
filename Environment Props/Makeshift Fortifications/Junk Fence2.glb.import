@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cmnyd3i60e5dp"
-path="res://.godot/imported/Ruble Long.glb-84cd0bfc25ca782f4bd39b4d1636d593.scn"
+uid="uid://y55pue8swwll"
+path="res://.godot/imported/Junk Fence2.glb-7eb4a06c0870d6ba22fd9dc71f4f81b1.scn"
 
 [deps]
 
-source_file="res://Environment Props/Ruble/Ruble Long.glb"
-dest_files=["res://.godot/imported/Ruble Long.glb-84cd0bfc25ca782f4bd39b4d1636d593.scn"]
+source_file="res://Environment Props/Makeshift Fortifications/Junk Fence2.glb"
+dest_files=["res://.godot/imported/Junk Fence2.glb-7eb4a06c0870d6ba22fd9dc71f4f81b1.scn"]
 
 [params]
 
@@ -39,7 +39,13 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "nodes": {
-"PATH:Ruble": {
+"PATH:Fence": {
+"generate/physics": true
+},
+"PATH:Metal2": {
+"generate/physics": true
+},
+"PATH:Metal5": {
 "generate/physics": true
 }
 }

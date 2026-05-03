@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cmnyd3i60e5dp"
-path="res://.godot/imported/Ruble Long.glb-84cd0bfc25ca782f4bd39b4d1636d593.scn"
+uid="uid://c8rboc2od5gss"
+path="res://.godot/imported/Sandbags Single.glb-4696c168ed5a7cd5850631515285552b.scn"
 
 [deps]
 
-source_file="res://Environment Props/Ruble/Ruble Long.glb"
-dest_files=["res://.godot/imported/Ruble Long.glb-84cd0bfc25ca782f4bd39b4d1636d593.scn"]
+source_file="res://Environment Props/Military/Sandbags Single.glb"
+dest_files=["res://.godot/imported/Sandbags Single.glb-4696c168ed5a7cd5850631515285552b.scn"]
 
 [params]
 
@@ -39,7 +39,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "nodes": {
-"PATH:Ruble": {
+"PATH:sandbag": {
 "generate/physics": true
 }
 }
