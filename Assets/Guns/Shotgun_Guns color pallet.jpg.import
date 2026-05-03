@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqx1e8jny3i3r"
-path.s3tc="res://.godot/imported/LEGASY Sacv Bolt Rifle_Scav Bolt Rifle color pallet.jpg-7972dfeccd141162d69eb7a57ffecc98.s3tc.ctex"
+uid="uid://cgn84tn7k4d2f"
+path.s3tc="res://.godot/imported/Shotgun_Guns color pallet.jpg-d411515201eb0b770847d988dea0ab9f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "0d9e53e81bcdb2efdc1ca7447dabae5a"
+"md5": "ac9dc1a0d9f5ae00a31e775acc64c632"
 }
 
 [deps]
 
-source_file="res://Assets/Guns/OLD/LEGASY Sacv Bolt Rifle_Scav Bolt Rifle color pallet.jpg"
-dest_files=["res://.godot/imported/LEGASY Sacv Bolt Rifle_Scav Bolt Rifle color pallet.jpg-7972dfeccd141162d69eb7a57ffecc98.s3tc.ctex"]
+source_file="res://Assets/Guns/Shotgun_Guns color pallet.jpg"
+dest_files=["res://.godot/imported/Shotgun_Guns color pallet.jpg-d411515201eb0b770847d988dea0ab9f.s3tc.ctex"]
 
 [params]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bptghv5tgautt"
-path="res://.godot/imported/LEGASY Sacv Bolt Rifle.glb-09f4f8e2e92f28806fddcef608c117a2.scn"
+uid="uid://c3jd2jehd0c1a"
+path="res://.godot/imported/Shotgun.glb-35e52cc51e804889502b560a5ed9ba86.scn"
 
 [deps]
 
-source_file="res://Assets/Guns/OLD/LEGASY Sacv Bolt Rifle.glb"
-dest_files=["res://.godot/imported/LEGASY Sacv Bolt Rifle.glb-09f4f8e2e92f28806fddcef608c117a2.scn"]
+source_file="res://Assets/Guns/Shotgun.glb"
+dest_files=["res://.godot/imported/Shotgun.glb-35e52cc51e804889502b560a5ed9ba86.scn"]
 
 [params]
 
