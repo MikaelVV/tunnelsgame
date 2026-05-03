@@ -6,13 +6,14 @@ var acceleration = 10
 @export var speed = 3
 
 @onready var navigationAgent := $NavigationAgent3D
-#@onready var target := $"../Marker3D"
-@onready var targetNext := $"../Marker3D2"
-@onready var model := $"Model/ukko solttu"
+@onready var target := $"../NavigationRegion3D/Markers/Marker3D"
+@onready var targetNext := $"../NavigationRegion3D/Markers/Marker3D2"
+@onready var model := $"."
 @onready var detection_area := $"Area3D"
 @onready var player := %"Player"
+@onready var cover_positions = [target.position, targetNext.position]
 
-enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT}
+enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT, TOCOVER}
 var state : States = States.IDLE
 
 var idle_wait_time: float = 3.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
@@ -41,6 +42,8 @@ func _physics_process(delta):
 			attack()
 		States.RETREAT:
 			retreat()
+		States.TOCOVER:
+			tocover()
 	
 	#if(navigationAgent.is_target_reached()):
 		#nextTarget(delta)
@@ -81,6 +84,7 @@ func move():
 	#velocity = velocity.lerp(direction * speed, acceleration * delta)
 	velocity = direction * speed
 	
+#Keskeneräinen attack funktio. Tällä hetkellä vaan huomattuaan pelaajan se seuraa sitä.
 func attack():
 	var current_position = global_transform.origin
 	var get_player_position = player.position
@@ -94,6 +98,26 @@ func attack():
 func retreat():
 	if health <= 25:
 		print("retreating!")
+		
+#Laskee arrayhin laittettujen markkerien välillä matkan ja ottaa lyhyimmän matkan riippuen omasta sijainnista.
+func tocover():
+	var current_position = global_transform.origin
+	var closest_position
+	var closest_distance = INF
+	
+	for p in cover_positions:
+		var distance = global_transform.origin.distance_to(p)
+		if distance < closest_distance:
+			closest_distance = distance
+			closest_position = p
+	print("taking cover!")
+	
+	var next_position = navigationAgent.get_next_path_position()
+	var direction = (next_position - current_position).normalized()
+	navigationAgent.target_position = closest_position
+	velocity = direction * speed
+	look_at(navigationAgent.get_next_path_position())
+	return closest_position
 
 #NPC pystyy liikkumaan vasemmalle, tai oikealle välillä 2.5 - 5.5 metriä. Vector2, eli Y on 0 value
 #Koska ei tietenkään haluta, että sotilaat lentää (vielä).
@@ -110,8 +134,7 @@ func _on_navigation_agent_3d_target_reached() -> void:
 #Katsoo onko pelaaja näköetäisyydessä ja jos on, niin hyökkää.
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("Player"):
-		attack()
-		state = States.ATTACK
+		state = States.TOCOVER
 
 #Pelaajan päästyä pois näköetäisyydeltä, vihollinen palaa takaisin idleen.
 func _on_area_3d_body_exited(body: Node3D) -> void:
