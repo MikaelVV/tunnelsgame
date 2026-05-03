@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://d0m43i3mr8j4n" path="res://Environment Props/Makeshift Fortifications/Junk Fence Corner.glb" id="13_rhgud"]
 [ext_resource type="PackedScene" uid="uid://y55pue8swwll" path="res://Environment Props/Makeshift Fortifications/Junk Fence2.glb" id="14_j3qlm"]
 [ext_resource type="PackedScene" uid="uid://c8rboc2od5gss" path="res://Environment Props/Military/Sandbags Single.glb" id="15_8rmwq"]
+[ext_resource type="PackedScene" uid="uid://duj0ehjft7veb" path="res://Environment Props/Military/Tank Trap.glb" id="16_71r7u"]
+[ext_resource type="PackedScene" uid="uid://cakcxtvsfly8v" path="res://Environment Props/Military/Barbed Wire.glb" id="17_w58bs"]
+[ext_resource type="PackedScene" uid="uid://bisulyyirheo6" path="res://Environment Props/Crate/Wooden Crate Medium.glb" id="18_w58bs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -110,5 +113,17 @@ transform = Transform3D(0.9785305, 0, 0.20610172, 0, 1, 0, -0.20610172, 0, 0.978
 [node name="Sandbags Single3" parent="props" unique_id=1974743219 instance=ExtResource("15_8rmwq")]
 transform = Transform3D(-0.9954795, 0, 0.09497704, 0, 1, 0, -0.09497704, 0, -0.9954795, 8.730127, 0.97741747, 10.02791)
 
-[node name="Ruble Long" parent="." unique_id=484506441 instance=ExtResource("10_yvcmx")]
+[node name="Ruble Long" parent="props" unique_id=484506441 instance=ExtResource("10_yvcmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.939833, 0.3290746, 3.612691)
+
+[node name="Tank Trap2" parent="props" unique_id=2080953607 instance=ExtResource("16_71r7u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.746323, 0.25, 7.394259)
+
+[node name="Tank Trap3" parent="props" unique_id=178488808 instance=ExtResource("16_71r7u")]
+transform = Transform3D(0.55222803, 0, 0.8336931, 0, 1, 0, -0.8336931, 0, 0.55222803, 13.705021, 0.25, 3.1902955)
+
+[node name="Barbed Wire2" parent="props" unique_id=630610956 instance=ExtResource("17_w58bs")]
+transform = Transform3D(0.24784455, 0, 0.9687998, 0, 1, 0, -0.9687998, 0, 0.24784455, 13.298553, 0.7561537, 5.273507)
+
+[node name="Wooden Crate Medium2" parent="props" unique_id=1179994854 instance=ExtResource("18_w58bs")]
+transform = Transform3D(-0.98869365, 0, -0.14994945, 0, 1, 0, 0.14994945, 0, -0.98869365, 9.308235, 0.25, 8.929937)
