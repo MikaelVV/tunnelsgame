@@ -3,7 +3,7 @@ extends CharacterBody3D
 var acceleration = 10
 
 @export var health = 100
-@export var speed = 3
+@export var speed = 4.5
 
 @onready var navigationAgent := $NavigationAgent3D
 @onready var target := $"../NavigationRegion3D/Markers/Marker3D"
@@ -16,7 +16,7 @@ var acceleration = 10
 enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT, TOCOVER}
 var state : States = States.IDLE
 
-var idle_wait_time: float = 3.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
+var idle_wait_time: float = 6.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
 var idle_timer_count: float = 0
 
 func _physics_process(delta):
@@ -128,8 +128,11 @@ func new_target() -> Vector3:
 
 #Kun NPC pääsee kohteeseensa, niin state muuttuu taas idleksi ja alkaa etsimään uutta patrollaus kohdetta.
 func _on_navigation_agent_3d_target_reached() -> void:
-	print("reached target!")
-	state = States.IDLE
+	if health <= 50:
+		state = States.TOCOVER
+	else:
+		print("reached target!")
+		state = States.IDLE
 
 #Katsoo onko pelaaja näköetäisyydessä ja jos on, niin hyökkää.
 func _on_area_3d_body_entered(body: Node3D) -> void:
