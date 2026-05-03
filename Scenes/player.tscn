@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://c6lfoj2le3kki" path="res://Scripts/GunController.gd" id="4_3smsa"]
 [ext_resource type="PackedScene" uid="uid://cx7l1lg5byq56" path="res://Scenes/Guns/Pistol.tscn" id="4_vgqql"]
 [ext_resource type="PackedScene" uid="uid://bbtawgptfefo7" path="res://Scenes/Guns/Hands.tscn" id="5_fkybt"]
+[ext_resource type="PackedScene" uid="uid://0gowi035w4kl" path="res://Scenes/InventoryMenu.tscn" id="8_8erm5"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_rmglt"]
 
@@ -60,3 +61,6 @@ volume_db = 1.0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 32
+
+[node name="InventoryMenu" parent="." unique_id=430639094 instance=ExtResource("8_8erm5")]
+unique_name_in_owner = true
