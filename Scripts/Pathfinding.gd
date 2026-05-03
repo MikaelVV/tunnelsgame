@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 var acceleration = 10
 
-@export var health = 100
+@export var health = 100.0
 @export var speed = 4.5
 
 @onready var navigationAgent := $NavigationAgent3D
@@ -12,15 +12,26 @@ var acceleration = 10
 @onready var detection_area := $"Area3D"
 @onready var player := %"Player"
 @onready var cover_positions = [target.position, targetNext.position]
-@onready var Audio := $AudioStreamPlayer3D
+@onready var audio := $AudioStreamPlayer3D
+@onready var anim_tree := $AnimationTree
 
 enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT, TOCOVER}
 @export var state : States = States.IDLE
 
+var anim_state
 var idle_wait_time: float = 6.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
 var idle_timer_count: float = 0
 
+func _ready() -> void:
+	anim_state = anim_tree.get("parameters/playback")
+
 func _physics_process(delta):
+	match anim_state.get_current_node():
+		"Idle":
+			pass                  #Tähän eri animaatiot, jotka löytyy sitten AnimationTree:stä
+		"Moving":
+			pass
+		
 	#var direction = Vector3()
 	
 	#navigationAgent.target_position = target.global_position
@@ -84,7 +95,7 @@ func move():
 	look_at(navigationAgent.get_next_path_position())
 	#velocity = velocity.lerp(direction * speed, acceleration * delta)
 	velocity = direction * speed
-	Audio.play()
+	audio.play()
 	
 #Keskeneräinen attack funktio. Tällä hetkellä vaan huomattuaan pelaajan se seuraa sitä.
 func attack():
@@ -130,7 +141,7 @@ func new_target() -> Vector3:
 
 #Kun NPC pääsee kohteeseensa, niin state muuttuu taas idleksi ja alkaa etsimään uutta patrollaus kohdetta.
 func _on_navigation_agent_3d_target_reached() -> void:
-	Audio.stop()
+	audio.stop()
 	if health <= 50:
 		state = States.TOCOVER
 	else:

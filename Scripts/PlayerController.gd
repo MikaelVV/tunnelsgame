@@ -1,11 +1,13 @@
 extends CharacterBody3D
 
 @export var health = 100.0
+@export var mouse_sensitivity = 0.005
+
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 4.5
-const SENSITIVITY = 0.005
+
 
 #Headbob variablet
 const BOB_FREQ = 2.0
@@ -26,8 +28,8 @@ func _ready():
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * SENSITIVITY)
-		camera.rotate_x(-event.relative.y * SENSITIVITY)
+		head.rotate_y(-event.relative.x * mouse_sensitivity)
+		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-85), deg_to_rad(85)) #-40 ja 60
 
 func _physics_process(delta: float) -> void:
