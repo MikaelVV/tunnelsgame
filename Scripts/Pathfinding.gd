@@ -12,9 +12,10 @@ var acceleration = 10
 @onready var detection_area := $"Area3D"
 @onready var player := %"Player"
 @onready var cover_positions = [target.position, targetNext.position]
+@onready var Audio := $AudioStreamPlayer3D
 
 enum States { IDLE, WAITING, MOVE, ATTACK, RETREAT, TOCOVER}
-var state : States = States.IDLE
+@export var state : States = States.IDLE
 
 var idle_wait_time: float = 6.5 # Määrittää kauanko vihollinen on paikoillaan ennenkuin se alkaa liikkumaan.
 var idle_timer_count: float = 0
@@ -83,6 +84,7 @@ func move():
 	look_at(navigationAgent.get_next_path_position())
 	#velocity = velocity.lerp(direction * speed, acceleration * delta)
 	velocity = direction * speed
+	Audio.play()
 	
 #Keskeneräinen attack funktio. Tällä hetkellä vaan huomattuaan pelaajan se seuraa sitä.
 func attack():
@@ -96,7 +98,7 @@ func attack():
 	print("attacking!")
 	
 func retreat():
-	if health <= 25:
+	if health <= 15:
 		print("retreating!")
 		
 #Laskee arrayhin laittettujen markkerien välillä matkan ja ottaa lyhyimmän matkan riippuen omasta sijainnista.
@@ -128,6 +130,7 @@ func new_target() -> Vector3:
 
 #Kun NPC pääsee kohteeseensa, niin state muuttuu taas idleksi ja alkaa etsimään uutta patrollaus kohdetta.
 func _on_navigation_agent_3d_target_reached() -> void:
+	Audio.stop()
 	if health <= 50:
 		state = States.TOCOVER
 	else:
