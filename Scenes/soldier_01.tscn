@@ -12,7 +12,7 @@ data = PackedByteArray("//vQRAAAxSBorhHvTPCnz3XBJYnwV2Ge9TTHgALxPV4KmMAAAAFhxDpG
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ixauc"]
 
-[node name="Soldier01" type="CharacterBody3D" unique_id=499111874]
+[node name="Soldier01" type="CharacterBody3D" unique_id=499111874 groups=["Enemies"]]
 script = ExtResource("1_ixauc")
 
 [node name="Model" type="Node3D" parent="." unique_id=486358429]
@@ -22,7 +22,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=578802429]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=877035488]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=877035488 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1302619, 0)
 shape = SubResource("CapsuleShape3D_oevta")
 

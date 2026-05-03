@@ -3,6 +3,7 @@ extends CharacterBody3D
 @export var health = 100.0
 @export var mouse_sensitivity = 0.005
 
+var damage = 5.0
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
@@ -21,7 +22,9 @@ var gravity = 9.8
 @onready var camera = $HeadPivot/Camera3D
 @onready var pause_menu = $"../CanvasLayer/PauseMenu"
 @onready var health_label := $HealthTest
-
+@onready var weapon_sbr := $"HeadPivot/Camera3D/HandSlot/ScavBoltRifle/Model/Sacv Bolt Rifle"
+@onready var weapon_ar := $"HeadPivot/Camera3D/HandSlot/Assault_Rifle/Model/Assault Rifle"
+@onready var weapon_pistol := $"HeadPivot/Camera3D/HandSlot/Pistol/Model/pistol"
 
 func _ready():
 	pause_menu.hide()
@@ -51,6 +54,7 @@ func _physics_process(delta: float) -> void:
 		
 	# inventory koodi kesken.
 	if Input.is_action_just_pressed("inventory"):
+		health -= damage #Healthin testausta varten
 		return
 		
 	# Get the input direction and handle the movement/deceleration.

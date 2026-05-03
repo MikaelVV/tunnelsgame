@@ -10,3 +10,7 @@
 
 [node name="RayCast3D" type="RayCast3D" parent="." unique_id=19596560]
 transform = Transform3D(1, 0, 0, 0, -1.3113416e-07, -1, 0, 3, -4.371139e-08, -0.012406826, 0.11163085, -0.17213227)
+
+[node name="WeaponAudio" type="AudioStreamPlayer3D" parent="." unique_id=746291503]
+
+[node name="WeaponSwitchAnim" type="AnimationPlayer" parent="." unique_id=1357366595]
