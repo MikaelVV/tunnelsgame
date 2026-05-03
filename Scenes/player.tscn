@@ -52,3 +52,8 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2657489, 0)
 stream = SubResource("AudioStreamMP3_fkybt")
 volume_db = 1.0
+
+[node name="HealthTest" type="Label" parent="." unique_id=1623647086]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 32

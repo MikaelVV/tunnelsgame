@@ -20,6 +20,7 @@ var gravity = 9.8
 @onready var head = $HeadPivot
 @onready var camera = $HeadPivot/Camera3D
 @onready var pause_menu = $"../CanvasLayer/PauseMenu"
+@onready var health_label := $HealthTest
 
 
 func _ready():
@@ -33,6 +34,8 @@ func _unhandled_input(event):
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-85), deg_to_rad(85)) #-40 ja 60
 
 func _physics_process(delta: float) -> void:
+	health_label.text = "Health: " + str(health)
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

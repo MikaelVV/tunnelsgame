@@ -22,6 +22,7 @@ offset_top = 210.0
 offset_right = 810.0005
 offset_bottom = 299.00006
 scale = Vector2(0.8799997, 0.8799997)
+theme_override_font_sizes/font_size = 32
 text = "Start Game"
 
 [node name="SettingsButton" type="Button" parent="CanvasLayer/Control" unique_id=497133311]
@@ -31,6 +32,7 @@ offset_top = 333.0
 offset_right = 808.0005
 offset_bottom = 423.00006
 scale = Vector2(0.8799997, 0.8799997)
+theme_override_font_sizes/font_size = 32
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="CanvasLayer/Control" unique_id=1356871061]
@@ -40,6 +42,7 @@ offset_top = 451.0
 offset_right = 808.0005
 offset_bottom = 549.00006
 scale = Vector2(0.8799997, 0.8799997)
+theme_override_font_sizes/font_size = 32
 text = "Quit Game"
 
 [connection signal="pressed" from="CanvasLayer/Control/StartButton" to="." method="_on_start_button_pressed"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dra3xfri63lr8" path="res://Scripts/PauseMenu.gd" id="1_emv3i"]
 
-[node name="PauseMenu" type="Control"]
+[node name="PauseMenu" type="Control" unique_id=1112614711]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_emv3i")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1288690598]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -26,22 +26,25 @@ offset_bottom = 234.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=437985197]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 64
 
-[node name="ResumeButton" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="ResumeButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1446214189]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Resume Game"
 
-[node name="ReturnButton" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="ReturnButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=698940892]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Return to Main Menu"
 
-[node name="QuitButton" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1657954367]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Quit Game"
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]

@@ -36,6 +36,7 @@ offset_right = 75.26611
 offset_bottom = 25.899963
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 32
 text = "Back"
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/BackButton" to="." method="_on_back_button_pressed"]
