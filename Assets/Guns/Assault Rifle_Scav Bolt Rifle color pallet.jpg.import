@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j7xa4qweux56"
-path.s3tc="res://.godot/imported/pistol proto_Scav Bolt Rifle color pallet.jpg-31d0f8a71739d87470f3ba1275c39645.s3tc.ctex"
+uid="uid://dldrpi0mkkddh"
+path.s3tc="res://.godot/imported/Assault Rifle_Scav Bolt Rifle color pallet.jpg-aec56ece9d84ba1fc4617690c1947289.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/Guns/pistol proto_Scav Bolt Rifle color pallet.jpg"
-dest_files=["res://.godot/imported/pistol proto_Scav Bolt Rifle color pallet.jpg-31d0f8a71739d87470f3ba1275c39645.s3tc.ctex"]
+source_file="res://Assets/Guns/Assault Rifle_Scav Bolt Rifle color pallet.jpg"
+dest_files=["res://.godot/imported/Assault Rifle_Scav Bolt Rifle color pallet.jpg-aec56ece9d84ba1fc4617690c1947289.s3tc.ctex"]
 
 [params]
 

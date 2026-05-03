@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://vrrfnfynb63d"
-path="res://.godot/imported/Sacv Bolt Rifle.glb-3c01894b4e4ae5157deb63cb0e23b261.scn"
+uid="uid://bdhopr8kck4jv"
+path="res://.godot/imported/LEGASYpistol proto.glb-5f8987e50df153bde15eae050d0e7f7a.scn"
 
 [deps]
 
-source_file="res://Assets/Guns/Sacv Bolt Rifle.glb"
-dest_files=["res://.godot/imported/Sacv Bolt Rifle.glb-3c01894b4e4ae5157deb63cb0e23b261.scn"]
+source_file="res://Assets/Guns/OLD/LEGASYpistol proto.glb"
+dest_files=["res://.godot/imported/LEGASYpistol proto.glb-5f8987e50df153bde15eae050d0e7f7a.scn"]
 
 [params]
 
@@ -37,12 +37,6 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"nodes": {
-"PATH:Gun/Skeleton3D/Bone/Rifle/scope": {
-"import/skip_import": true
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
