@@ -1,13 +1,41 @@
-[gd_scene format=3 uid="uid://g4yg3og8nlnd"]
+[gd_scene format=3 uid="uid://dddk88d487k30"]
+
+[ext_resource type="Script" uid="uid://c1wlco3fulwxt" path="res://Scripts/MainMenu.gd" id="1_jrbyj"]
 
 [node name="OptionsMenu" type="Node2D" unique_id=1111871918]
+script = ExtResource("1_jrbyj")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=845369969]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=814622986]
 
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=1091756964]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=717170014]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control" unique_id=1231806858]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/Panel" unique_id=325517577]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.92
+anchor_right = 0.5
+anchor_bottom = 0.92
+offset_left = -71.0
+offset_top = -26.600037
+offset_right = 75.26611
+offset_bottom = 25.899963
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/BackButton" to="." method="_on_back_button_pressed"]

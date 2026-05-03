@@ -14,9 +14,11 @@ var t_bob = 0.0
 
 var gravity = 9.8
 
+@onready var Audio := $AudioStreamPlayer3D
 @onready var head = $HeadPivot
 @onready var camera = $HeadPivot/Camera3D
 @onready var pause_menu = $"../CanvasLayer/PauseMenu"
+
 
 func _ready():
 	pause_menu.hide()
@@ -56,6 +58,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 7.0)
 			velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
+			Audio.play()
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.5)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.5)

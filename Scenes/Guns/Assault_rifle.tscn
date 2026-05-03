@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cafus3jvfo6gx"]
+
+[ext_resource type="PackedScene" uid="uid://ct3ril37r27tx" path="res://Assets/Guns/Assault Rifle.glb" id="1_ergeg"]
+
+[node name="Assault_Rifle" type="Node3D" unique_id=1244434014]
+
+[node name="Model" type="Node3D" parent="." unique_id=1106332442]
+
+[node name="Assault Rifle" parent="Model" unique_id=38739486 instance=ExtResource("1_ergeg")]
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=341064124]
+transform = Transform3D(1, 0, 0, 0, -3.496911e-07, -1, 0, 8, -4.371139e-08, 0, 0.17845175, -0.5487086)

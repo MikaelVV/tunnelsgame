@@ -1,20 +1,19 @@
 [gd_scene format=3 uid="uid://dxt5ibfn1xk4p"]
 
-[ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Assets/Guns/OLD/LEGASY Sacv Bolt Rifle.glb" id="1_a1yns"]
 [ext_resource type="Script" uid="uid://c6lfoj2le3kki" path="res://Scripts/GunController.gd" id="1_qg4wr"]
+[ext_resource type="PackedScene" uid="uid://vrrfnfynb63d" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="2_qg4wr"]
 
 [node name="ScavBoltRifle" type="Node3D" unique_id=1118123335]
 script = ExtResource("1_qg4wr")
 
 [node name="Model" type="Node3D" parent="." unique_id=1911164102]
 
-[node name="Sacv Bolt Rifle" parent="Model" unique_id=1942739509 instance=ExtResource("1_a1yns")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+[node name="Sacv Bolt Rifle" parent="Model" unique_id=534964649 instance=ExtResource("2_qg4wr")]
 
 [node name="WeaponAudio" type="AudioStreamPlayer" parent="." unique_id=929240569]
 
 [node name="RayCast3D" type="RayCast3D" parent="." unique_id=853576214]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.514425, 0.21221012, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0134006, 0.088186234, 0.0022893175)
 target_position = Vector3(100, 0, 0)
 
 [node name="WeaponSwitchAnim" type="AnimationPlayer" parent="." unique_id=456930001]
