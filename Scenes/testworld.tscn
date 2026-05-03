@@ -4,14 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://bptghv5tgautt" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="2_lqhb6"]
 [ext_resource type="PackedScene" uid="uid://bdhopr8kck4jv" path="res://Assets/Guns/pistol proto.glb" id="3_7mloq"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
-[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="5_qmhdh"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/Army/ukko solttu.glb" id="5_qmhdh"]
 [ext_resource type="PackedScene" uid="uid://bdp3j48mykmqo" path="res://Assets/GasMask/Gas_Mask.glb" id="6_ojwke"]
-[ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Sandbags Line.glb" id="7_6gvke"]
-[ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Sandbags Curved.glb" id="8_hgtst"]
-[ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Sandbags Loose.glb" id="9_yvcmx"]
-[ext_resource type="PackedScene" uid="uid://cxgog0np7fmab" path="res://Environment Props/Ruble Long.glb" id="10_yvcmx"]
-[ext_resource type="PackedScene" uid="uid://ddmm8hodb2wui" path="res://Environment Props/Ruble Small.glb" id="11_4qck5"]
-[ext_resource type="PackedScene" uid="uid://c66d5ri5ta3gj" path="res://Environment Props/Junk Fence1.glb" id="12_4qck5"]
+[ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Military/Sandbags Line.glb" id="7_6gvke"]
+[ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Military/Sandbags Curved.glb" id="8_hgtst"]
+[ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Military/Sandbags Loose.glb" id="9_yvcmx"]
+[ext_resource type="PackedScene" uid="uid://cxgog0np7fmab" path="res://Environment Props/Ruble/Ruble Long.glb" id="10_yvcmx"]
+[ext_resource type="PackedScene" uid="uid://ddmm8hodb2wui" path="res://Environment Props/Ruble/Ruble Small.glb" id="11_4qck5"]
+[ext_resource type="PackedScene" uid="uid://c66d5ri5ta3gj" path="res://Environment Props/Makeshift Fortifications/Junk Fence1.glb" id="12_4qck5"]
+[ext_resource type="PackedScene" uid="uid://d0m43i3mr8j4n" path="res://Environment Props/Makeshift Fortifications/Junk Fence Corner.glb" id="13_rhgud"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -60,7 +61,7 @@ offset_right = 7.0
 offset_bottom = 3.0
 metadata/_edit_use_anchors_ = true
 
-[node name="ukko solttu" parent="." unique_id=1549127524 instance=ExtResource("5_qmhdh")]
+[node name="ukko solttu" parent="." unique_id=589829820 instance=ExtResource("5_qmhdh")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.8243065, 0.25448304, 9.191877)
 
 [node name="Gas_Mask" parent="." unique_id=2020315896 instance=ExtResource("6_ojwke")]
@@ -74,20 +75,23 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.16
 transform = Transform3D(1, 0, 0, 0, 1.9, 0, 0, 0, 1, 7.9444704, 1.2048076, 9.23299)
 mesh = SubResource("BoxMesh_ojwke")
 
-[node name="Sandbags Line" parent="." unique_id=702111046 instance=ExtResource("7_6gvke")]
+[node name="Sandbags Line" parent="." unique_id=606488010 instance=ExtResource("7_6gvke")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5382595, 0.27628803, 9.9629755)
 
-[node name="Sandbags Curved" parent="." unique_id=1092270437 instance=ExtResource("8_hgtst")]
+[node name="Sandbags Curved" parent="." unique_id=1192134581 instance=ExtResource("8_hgtst")]
 transform = Transform3D(0.45950237, 0, 0.88817656, 0, 1, 0, -0.88817656, 0, 0.45950237, 11.630801, 0.27628785, 8.669349)
 
-[node name="Sandbags Loose" parent="." unique_id=411200030 instance=ExtResource("9_yvcmx")]
+[node name="Sandbags Loose" parent="." unique_id=886156291 instance=ExtResource("9_yvcmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.031707, 0.29194432, 5.646879)
 
-[node name="Ruble Long" parent="." unique_id=2092324546 instance=ExtResource("10_yvcmx")]
+[node name="Ruble Long" parent="." unique_id=2076099086 instance=ExtResource("10_yvcmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.037105, 0.41954565, 3.6560345)
 
-[node name="Ruble Small" parent="." unique_id=667773893 instance=ExtResource("11_4qck5")]
+[node name="Ruble Small" parent="." unique_id=1915955393 instance=ExtResource("11_4qck5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.859878, 0.30317038, 1.8213301)
 
-[node name="Junk Fence1" parent="." unique_id=202818695 instance=ExtResource("12_4qck5")]
+[node name="Junk Fence1" parent="." unique_id=1764621960 instance=ExtResource("12_4qck5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2905295, 0.26693463, 9.810501)
+
+[node name="Junk Fence Corner" parent="." unique_id=2117326474 instance=ExtResource("13_rhgud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70876694, 0.26693463, 9.81552)

@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cqdyetqma0ec2"]
 
 [ext_resource type="Script" uid="uid://bf64cs428orcb" path="res://Scripts/Pathfinding.gd" id="1_ixauc"]
-[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/ukko solttu.glb" id="2_mt5mh"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/Army/ukko solttu.glb" id="2_mt5mh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oevta"]
 
