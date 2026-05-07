@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bptghv5tgautt"
-path="res://.godot/imported/LEGASY Sacv Bolt Rifle.glb-09f4f8e2e92f28806fddcef608c117a2.scn"
+uid="uid://bfumpn0a0n2il"
+path="res://.godot/imported/FS Militia Elite.glb-72410c8cf065706ec50e2e39bdeeb63c.scn"
 
 [deps]
 
-source_file="res://Assets/Guns/OLD/LEGASY Sacv Bolt Rifle.glb"
-dest_files=["res://.godot/imported/LEGASY Sacv Bolt Rifle.glb-09f4f8e2e92f28806fddcef608c117a2.scn"]
+source_file="res://Characters/FreeSilos/FS Militia Elite.glb"
+dest_files=["res://.godot/imported/FS Militia Elite.glb-72410c8cf065706ec50e2e39bdeeb63c.scn"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb1p1s2rfabev"
-path.s3tc="res://.godot/imported/LEGASYpistol proto_Scav Bolt Rifle color pallet.jpg-cdf58b967c7199f4a6ccc5b998f5a65b.s3tc.ctex"
+uid="uid://c0vs4ynp8mag0"
+path.s3tc="res://.godot/imported/FS Militia_Ucupaint Legs Color.png-33fca2e1813e791a5e2cf4a4a913b9b0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "ac9dc1a0d9f5ae00a31e775acc64c632"
+"md5": "f372931b272d38d0006f524533a9bac8"
 }
 
 [deps]
 
-source_file="res://Assets/Guns/OLD/LEGASYpistol proto_Scav Bolt Rifle color pallet.jpg"
-dest_files=["res://.godot/imported/LEGASYpistol proto_Scav Bolt Rifle color pallet.jpg-cdf58b967c7199f4a6ccc5b998f5a65b.s3tc.ctex"]
+source_file="res://Characters/FreeSilos/FS Militia_Ucupaint Legs Color.png"
+dest_files=["res://.godot/imported/FS Militia_Ucupaint Legs Color.png-33fca2e1813e791a5e2cf4a4a913b9b0.s3tc.ctex"]
 
 [params]
 

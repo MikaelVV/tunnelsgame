@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bdhopr8kck4jv"
-path="res://.godot/imported/LEGASYpistol proto.glb-5f8987e50df153bde15eae050d0e7f7a.scn"
+uid="uid://cq2up3ojg8sao"
+path="res://.godot/imported/FS Militia.glb-d463b303dd2a242616de573a4101b5ab.scn"
 
 [deps]
 
-source_file="res://Assets/Guns/OLD/LEGASYpistol proto.glb"
-dest_files=["res://.godot/imported/LEGASYpistol proto.glb-5f8987e50df153bde15eae050d0e7f7a.scn"]
+source_file="res://Characters/FreeSilos/FS Militia.glb"
+dest_files=["res://.godot/imported/FS Militia.glb-d463b303dd2a242616de573a4101b5ab.scn"]
 
 [params]
 

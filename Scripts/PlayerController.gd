@@ -3,6 +3,7 @@ extends CharacterBody3D
 @export var health = 100.0
 @export var mouse_sensitivity = 0.005
 
+var damage = 5.0
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
@@ -20,8 +21,11 @@ var gravity = 9.8
 @onready var head = $HeadPivot
 @onready var camera = $HeadPivot/Camera3D
 @onready var pause_menu = $"../CanvasLayer/PauseMenu"
+@onready var inventory_menu = $InventoryMenu/CanvasLayer/InvUI
 @onready var health_label := $HealthTest
-
+@onready var weapon_sbr := $"HeadPivot/Camera3D/HandSlot/ScavBoltRifle/Model/Sacv Bolt Rifle"
+@onready var weapon_ar := $"HeadPivot/Camera3D/HandSlot/Assault_Rifle/Model/Assault Rifle"
+@onready var weapon_pistol := $"HeadPivot/Camera3D/HandSlot/Pistol/Model/pistol"
 
 func _ready():
 	pause_menu.hide()
@@ -32,6 +36,15 @@ func _unhandled_input(event):
 		head.rotate_y(-event.relative.x * mouse_sensitivity)
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-85), deg_to_rad(85)) #-40 ja 60
+		
+	# inventory koodi kesken.
+	if Input.is_action_pressed("inventory"):
+		inventory_menu.visible = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		#health -= damage #Healthin testausta varten
+	else:
+		inventory_menu.visible = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta: float) -> void:
 	health_label.text = "Health: " + str(health)
@@ -48,10 +61,6 @@ func _physics_process(delta: float) -> void:
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
-		
-	# inventory koodi kesken.
-	if Input.is_action_just_pressed("inventory"):
-		return
 		
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("left", "right", "up", "down")
