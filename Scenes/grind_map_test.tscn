@@ -18,6 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://cakcxtvsfly8v" path="res://Environment Props/Military/Barbed Wire.glb" id="16_gnpw6"]
 [ext_resource type="PackedScene" uid="uid://bisulyyirheo6" path="res://Environment Props/Crate/Wooden Crate Medium.glb" id="17_q2m86"]
 [ext_resource type="PackedScene" uid="uid://duj0ehjft7veb" path="res://Environment Props/Military/Tank Trap.glb" id="18_liapf"]
+[ext_resource type="PackedScene" uid="uid://bvy8qi74672w7" path="res://Tunnel Prop/Textured/Tunnel_Cross.glb" id="19_6rxc8"]
+[ext_resource type="PackedScene" uid="uid://cksfnb1rj1vai" path="res://Tunnel Prop/Textured/Tunnel_Curve.glb" id="20_gnpw6"]
+[ext_resource type="PackedScene" uid="uid://bh242phyt3w7m" path="res://Tunnel Prop/Textured/Tunnel_Straight.glb" id="21_q2m86"]
+[ext_resource type="PackedScene" uid="uid://tvkjtwop7f58" path="res://Tunnel Prop/Textured/Tunnel_End.glb" id="22_liapf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -218,3 +222,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.815203, 5.3938727, -16.999
 height = 4.67
 vertices = PackedVector3Array(-62.12658, 0, 85.51914, 70.02766, 0, 88.08854, 72.39528, 0, -76.69218, -68.616104, 0, -80.17879)
 affect_navigation_mesh = true
+
+[node name="Tunnel_Cross2" parent="." unique_id=1790058257 instance=ExtResource("19_6rxc8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.7773, 0, 27.662348)
+
+[node name="Tunnel_Curve2" parent="." unique_id=520494000 instance=ExtResource("20_gnpw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -105.25911, -9.536743e-07, 27.967655)
+
+[node name="Tunnel_Straight2" parent="." unique_id=309571605 instance=ExtResource("21_q2m86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.0277, 0, 25.074108)
+
+[node name="Tunnel_End" parent="." unique_id=1263363118 instance=ExtResource("22_liapf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -142.99445, 0, 13.703524)
