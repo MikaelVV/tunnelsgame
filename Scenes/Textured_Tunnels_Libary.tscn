@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cjwl112g8dokr"]
+
+[ext_resource type="PackedScene" uid="uid://8dxxf357kh50" path="res://Tunnel Prop/Textured/Tunnel_Cross.glb" id="1_xkkks"]
+[ext_resource type="PackedScene" uid="uid://bgby1h3n0vwgk" path="res://Tunnel Prop/Textured/Tunnel_End.glb" id="3_a5f0f"]
+[ext_resource type="PackedScene" uid="uid://ch1htlglvre0k" path="res://Tunnel Prop/Textured/Tunnel_Straight.glb" id="4_2bogs"]
+[ext_resource type="PackedScene" uid="uid://bdnof8b68158u" path="res://Tunnel Prop/Textured/Tunnel_Curve_2.glb" id="4_xkkks"]
+
+[node name="Node3D" type="Node3D" unique_id=164296269]
+
+[node name="Tunnel_Cross2" parent="." unique_id=276439449 instance=ExtResource("1_xkkks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24.38441)
+
+[node name="Tunnel_End" parent="." unique_id=87403559 instance=ExtResource("3_a5f0f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25.524773)
+
+[node name="Tunnel_Straight2" parent="." unique_id=2059403007 instance=ExtResource("4_2bogs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.556503, 0, 0.06739426)
+
+[node name="Tunnel_Curve_2" parent="." unique_id=1533732152 instance=ExtResource("4_xkkks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.9327335)

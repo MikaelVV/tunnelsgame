@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cakcxtvsfly8v" path="res://Environment Props/Military/Barbed Wire.glb" id="16_gnpw6"]
 [ext_resource type="PackedScene" uid="uid://bisulyyirheo6" path="res://Environment Props/Crate/Wooden Crate Medium.glb" id="17_q2m86"]
 [ext_resource type="PackedScene" uid="uid://duj0ehjft7veb" path="res://Environment Props/Military/Tank Trap.glb" id="18_liapf"]
-[ext_resource type="MeshLibrary" uid="uid://cvhbplkl3u5gi" path="res://Tunnel Prop/TunnelBlockLibary_V2.tres" id="19_l1cdr"]
+[ext_resource type="MeshLibrary" uid="uid://7jv02rn2x1id" path="res://Tunnel Prop/TunnelBlockLibary_2.tres" id="19_l1cdr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mo0dc"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -220,9 +220,9 @@ height = 4.67
 vertices = PackedVector3Array(-62.12658, 0, 85.51914, 70.02766, 0, 88.08854, 72.39528, 0, -76.69218, -68.616104, 0, -80.17879)
 affect_navigation_mesh = true
 
-[node name="GridMap" type="GridMap" parent="NavigationRegion3D/NavigationObstacle3D" unique_id=222851850]
+[node name="GridMap" type="GridMap" parent="." unique_id=863634552]
 mesh_library = ExtResource("19_l1cdr")
-cell_size = Vector3(2, 2, 1.976)
+cell_size = Vector3(1.99, 2, 1.99)
 data = {
-"cells": PackedInt32Array(62, 12, 655360, 62, 1, 655363, 73, 12, 1, 62, 23, 2, 62, 65526, 1, 51, 65526, 1048577, 51, 1, 3, 51, 12, 655361, 73, 23, 655363, 73, 34, 655363, 73, 45, 655361, 84, 45, 1441793, 84, 34, 655363, 84, 23, 655363, 84, 13, 655363, 98, 11, 655363)
+"cells": PackedInt32Array(68, 17, 3, 68, 28, 1441795)
 }

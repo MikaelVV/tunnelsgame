@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qyi5qa6vfgwg"
-path.s3tc="res://.godot/imported/Tunnel_Curve_Ucupaint Cube.002 Metallic-Ucupaint Cube.png-79c5f79c48379317cbdef83d99421938.s3tc.ctex"
+uid="uid://cn7yang83t5bf"
+path.s3tc="res://.godot/imported/Tunnel_Curve_2_Ucupaint Cube_1.png-38373892fc546f3bb32c04dee2389518.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2c7570ec7987d364e88dfc95feb0a1a6"
+"md5": "6171fa1a189d36fccd0b79f7d18a0d2f"
 }
 
 [deps]
 
-source_file="res://Tunnel Prop/Textured/Tunnel_Curve_Ucupaint Cube.002 Metallic-Ucupaint Cube.png"
-dest_files=["res://.godot/imported/Tunnel_Curve_Ucupaint Cube.002 Metallic-Ucupaint Cube.png-79c5f79c48379317cbdef83d99421938.s3tc.ctex"]
+source_file="res://Tunnel Prop/Textured/Tunnel_Curve_2_Ucupaint Cube_1.png"
+dest_files=["res://.godot/imported/Tunnel_Curve_2_Ucupaint Cube_1.png-38373892fc546f3bb32c04dee2389518.s3tc.ctex"]
 
 [params]
 

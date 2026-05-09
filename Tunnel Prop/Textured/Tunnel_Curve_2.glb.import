@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbow5q2nd5jee"
-path="res://.godot/imported/Tunnel_Curve.glb-09bcfdf32f0679c196cc9f368583026b.scn"
+uid="uid://bdnof8b68158u"
+path="res://.godot/imported/Tunnel_Curve_2.glb-400102d048f32ff4445ea4af7dbf626a.scn"
 
 [deps]
 
-source_file="res://Tunnel Prop/Textured/Tunnel_Curve.glb"
-dest_files=["res://.godot/imported/Tunnel_Curve.glb-09bcfdf32f0679c196cc9f368583026b.scn"]
+source_file="res://Tunnel Prop/Textured/Tunnel_Curve_2.glb"
+dest_files=["res://.godot/imported/Tunnel_Curve_2.glb-400102d048f32ff4445ea4af7dbf626a.scn"]
 
 [params]
 
