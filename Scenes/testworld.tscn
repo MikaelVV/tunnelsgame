@@ -20,8 +20,9 @@
 [ext_resource type="PackedScene" uid="uid://bisulyyirheo6" path="res://Environment Props/Crate/Wooden Crate Medium.glb" id="18_w58bs"]
 [ext_resource type="PackedScene" uid="uid://ct3ril37r27tx" path="res://Assets/Guns/Assault Rifle.glb" id="19_1j1fi"]
 [ext_resource type="PackedScene" uid="uid://c3jd2jehd0c1a" path="res://Assets/Guns/Shotgun.glb" id="20_diyjp"]
-[ext_resource type="PackedScene" uid="uid://buhwb1npud7s" path="res://Assets/Guns/SMG.glb" id="21_wgpmd"]
+[ext_resource type="PackedScene" uid="uid://tgkmpe8q4l0h" path="res://Assets/Guns/SMG.glb" id="21_wgpmd"]
 [ext_resource type="PackedScene" uid="uid://bfumpn0a0n2il" path="res://Characters/FreeSilos/FS Militia Elite.glb" id="22_wxnvn"]
+[ext_resource type="PackedScene" uid="uid://bl35vka2lc5mx" path="res://Environment Props/Crate/Wooden Crate Large.glb" id="23_6ag8u"]
 [ext_resource type="PackedScene" uid="uid://cq2up3ojg8sao" path="res://Characters/FreeSilos/FS Militia.glb" id="23_6qdpa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
@@ -139,11 +140,14 @@ transform = Transform3D(0.0016383155, 1.0606868e-05, 0.99999875, -0.00019358417,
 [node name="Shotgun" parent="." unique_id=1527896188 instance=ExtResource("20_diyjp")]
 transform = Transform3D(0.00094248634, 0, 0.99999946, 0, 1, 0, -0.99999946, 0, 0.00094248634, 7.8500457, 1.0006782, 8.7014675)
 
-[node name="SMG" parent="." unique_id=2066404172 instance=ExtResource("21_wgpmd")]
-transform = Transform3D(0.010733593, 0, 0.9999424, 0, 1, 0, -0.9999424, 0, 0.010733593, 7.748552, 0.8728015, 8.698299)
-
 [node name="FS Militia Elite" parent="." unique_id=2006703235 instance=ExtResource("22_wxnvn")]
 transform = Transform3D(-0.99973947, 0, 0.022826895, 0, 1, 0, -0.022826895, 0, -0.99973947, 5.100421, 0.25000024, 8.731481)
 
 [node name="FS Militia" parent="." unique_id=609333272 instance=ExtResource("23_6qdpa")]
 transform = Transform3D(-0.99967533, 0, -0.025479095, 0, 1, 0, 0.025479095, 0, -0.99967533, 4.434102, 0.25, 8.38477)
+
+[node name="Wooden Crate Large" parent="." unique_id=686683453 instance=ExtResource("23_6ag8u")]
+transform = Transform3D(0.8251825, 0, -0.5648662, 0, 1, 0, 0.5648662, 0, 0.8251825, 12.455494, 0.25, 9.54081)
+
+[node name="SMG" parent="." unique_id=836234402 instance=ExtResource("21_wgpmd")]
+transform = Transform3D(-0.004345812, 0, 0.9999905, 0, 1, 0, -0.9999905, 0, -0.004345812, 7.7609982, 0.87675, 8.70486)
