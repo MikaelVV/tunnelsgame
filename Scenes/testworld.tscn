@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bfumpn0a0n2il" path="res://Characters/FreeSilos/FS Militia Elite.glb" id="22_wxnvn"]
 [ext_resource type="PackedScene" uid="uid://bl35vka2lc5mx" path="res://Environment Props/Crate/Wooden Crate Large.glb" id="23_6ag8u"]
 [ext_resource type="PackedScene" uid="uid://cq2up3ojg8sao" path="res://Characters/FreeSilos/FS Militia.glb" id="23_6qdpa"]
+[ext_resource type="PackedScene" uid="uid://cydal6hnexpca" path="res://Characters/Bandit/Bandit Light.glb" id="25_6ag8u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -151,3 +152,6 @@ transform = Transform3D(0.8251825, 0, -0.5648662, 0, 1, 0, 0.5648662, 0, 0.82518
 
 [node name="SMG" parent="." unique_id=836234402 instance=ExtResource("21_wgpmd")]
 transform = Transform3D(-0.004345812, 0, 0.9999905, 0, 1, 0, -0.9999905, 0, -0.004345812, 7.7609982, 0.87675, 8.70486)
+
+[node name="Bandit Light" parent="." unique_id=1034453559 instance=ExtResource("25_6ag8u")]
+transform = Transform3D(-0.9998127, 0, 0.01935442, 0, 1, 0, -0.01935442, 0, -0.9998127, 3.9971595, 0.24999976, 7.93754)
