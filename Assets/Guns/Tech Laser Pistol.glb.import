@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bhlnwuvg8jobk"
-path="res://.godot/imported/Tech Laser Rifle.glb-df036115cb335d81e2be2c40ea8d411d.scn"
+uid="uid://d2ke6gdx0ud7n"
+path="res://.godot/imported/Tech Laser Pistol.glb-f97900435a81c496344674a315d652f2.scn"
 
 [deps]
 
-source_file="res://Assets/Guns/Tech Laser Rifle.glb"
-dest_files=["res://.godot/imported/Tech Laser Rifle.glb-df036115cb335d81e2be2c40ea8d411d.scn"]
+source_file="res://Assets/Guns/Tech Laser Pistol.glb"
+dest_files=["res://.godot/imported/Tech Laser Pistol.glb-f97900435a81c496344674a315d652f2.scn"]
 
 [params]
 
