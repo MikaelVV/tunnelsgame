@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1pmltlapjbhu"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Body Color.png-69abc19075855637af6cfca0ef70f5ed.s3tc.ctex"
+uid="uid://vtxj8db4xjxb"
+path.s3tc="res://.godot/imported/Soldier mk2_Ucupaint Body.png-8ad2ddc4ed552c6e50a87f402eec1258.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a09dd039bd2ed573911d344f613ffe2a"
+"md5": "2c828ef6d068f63f3cb618b6f987fb21"
 }
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu_Ucupaint Body Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Body Color.png-69abc19075855637af6cfca0ef70f5ed.s3tc.ctex"]
+source_file="res://Characters/Army/Soldier mk2_Ucupaint Body.png"
+dest_files=["res://.godot/imported/Soldier mk2_Ucupaint Body.png-8ad2ddc4ed552c6e50a87f402eec1258.s3tc.ctex"]
 
 [params]
 

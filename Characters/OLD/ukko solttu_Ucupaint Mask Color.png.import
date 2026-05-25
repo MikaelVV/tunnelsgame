@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g73yl6m5c6r"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-39509891527ddf2bfa4c47bea17f12a0.s3tc.ctex"
+uid="uid://cc0jm30fpao1m"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-4f311bf3eab98166b2c27aae671404ee.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu_Ucupaint Mask Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-39509891527ddf2bfa4c47bea17f12a0.s3tc.ctex"]
+source_file="res://Characters/OLD/ukko solttu_Ucupaint Mask Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Mask Color.png-4f311bf3eab98166b2c27aae671404ee.s3tc.ctex"]
 
 [params]
 

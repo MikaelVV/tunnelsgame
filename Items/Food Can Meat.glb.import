@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b4rw1fyut3bwr"
-path="res://.godot/imported/ukko solttu.glb-acdad2cdb8a9220c6682ebf1f8ff7479.scn"
+uid="uid://d1g3ocqxaptxl"
+path="res://.godot/imported/Food Can Meat.glb-c09080f6dd58cf7a051d61a92e1be2e2.scn"
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu.glb"
-dest_files=["res://.godot/imported/ukko solttu.glb-acdad2cdb8a9220c6682ebf1f8ff7479.scn"]
+source_file="res://Items/Food Can Meat.glb"
+dest_files=["res://.godot/imported/Food Can Meat.glb-c09080f6dd58cf7a051d61a92e1be2e2.scn"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c60vo66tdmu4m"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-0012a9e37f0bb6b61e44666fb8581280.s3tc.ctex"
+uid="uid://b0rmuflcbcot5"
+path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-5597becf560689c72c7104e16d749fd1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu_Ucupaint Chest Armor Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-0012a9e37f0bb6b61e44666fb8581280.s3tc.ctex"]
+source_file="res://Characters/OLD/ukko solttu_Ucupaint Chest Armor Color.png"
+dest_files=["res://.godot/imported/ukko solttu_Ucupaint Chest Armor Color.png-5597becf560689c72c7104e16d749fd1.s3tc.ctex"]
 
 [params]
 

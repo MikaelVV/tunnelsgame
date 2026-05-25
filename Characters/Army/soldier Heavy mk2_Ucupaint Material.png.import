@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxquujv8upsyu"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Helmet Color.png-53a5e2da4eee51ab8cca9cc6a647a3b4.s3tc.ctex"
+uid="uid://dlieflmw6y5jp"
+path.s3tc="res://.godot/imported/soldier Heavy mk2_Ucupaint Material.png-2bc9a2c9d6c1415ec5790279750ea3c7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a569f82b837d0946c94ee8fccd210d9e"
+"md5": "afa355c5319001d06549b76090686254"
 }
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu_Ucupaint Helmet Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Helmet Color.png-53a5e2da4eee51ab8cca9cc6a647a3b4.s3tc.ctex"]
+source_file="res://Characters/Army/soldier Heavy mk2_Ucupaint Material.png"
+dest_files=["res://.godot/imported/soldier Heavy mk2_Ucupaint Material.png-2bc9a2c9d6c1415ec5790279750ea3c7.s3tc.ctex"]
 
 [params]
 

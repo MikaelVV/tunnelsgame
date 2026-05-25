@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_maub5"]
 [ext_resource type="MeshLibrary" uid="uid://bbq0ddw2ife8e" path="res://Tunnel Prop/TunnelBlockLibary.tres" id="5_cyevc"]
 [ext_resource type="PackedScene" uid="uid://cqdyetqma0ec2" path="res://Scenes/soldier_01.tscn" id="5_f5b1f"]
-[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/Army/ukko solttu.glb" id="5_oevta"]
+[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/OLD/ukko solttu.glb" id="5_oevta"]
 [ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Military/Sandbags Curved.glb" id="7_ts8so"]
 [ext_resource type="PackedScene" uid="uid://sqbwxujyh0dn" path="res://Environment Props/Military/Sandbags Loose.glb" id="8_wus7f"]
 [ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Military/Sandbags Line.glb" id="9_f5b1f"]

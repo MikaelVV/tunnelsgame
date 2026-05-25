@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5i3c8jn1xcrh"
-path.s3tc="res://.godot/imported/ukko solttu_Ucupaint Head Color.png-310de83c2128c5a0d4a8e50a3a8a251e.s3tc.ctex"
+uid="uid://b7yyo7fv4uwmv"
+path.s3tc="res://.godot/imported/soldier Heavy mk2_Ucupaint Head.png-f569859eb76f2729233715a8ef3a57eb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2459d6acb72ed953376233e85c9fd6c2"
+"md5": "3b9c9d31b40db3655681688ed01db7eb"
 }
 
 [deps]
 
-source_file="res://Characters/Army/ukko solttu_Ucupaint Head Color.png"
-dest_files=["res://.godot/imported/ukko solttu_Ucupaint Head Color.png-310de83c2128c5a0d4a8e50a3a8a251e.s3tc.ctex"]
+source_file="res://Characters/Army/soldier Heavy mk2_Ucupaint Head.png"
+dest_files=["res://.godot/imported/soldier Heavy mk2_Ucupaint Head.png-f569859eb76f2729233715a8ef3a57eb.s3tc.ctex"]
 
 [params]
 
