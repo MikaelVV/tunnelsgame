@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://bds02p0xaovdx" path="res://Scenes/player.tscn" id="1_ywrmy"]
 [ext_resource type="PackedScene" uid="uid://vrrfnfynb63d" path="res://Assets/Guns/Sacv Bolt Rifle.glb" id="2_lqhb6"]
 [ext_resource type="PackedScene" uid="uid://c0amvwo43vim1" path="res://Scenes/pause_menu.tscn" id="4_wr54j"]
-[ext_resource type="PackedScene" uid="uid://b4rw1fyut3bwr" path="res://Characters/OLD/ukko solttu.glb" id="5_qmhdh"]
 [ext_resource type="PackedScene" uid="uid://bdp3j48mykmqo" path="res://Assets/GasMask/Gas_Mask.glb" id="6_ojwke"]
 [ext_resource type="PackedScene" uid="uid://dxko1ah3whjxh" path="res://Environment Props/Military/Sandbags Line.glb" id="7_6gvke"]
 [ext_resource type="PackedScene" uid="uid://32wsxno7r3ue" path="res://Environment Props/Military/Sandbags Curved.glb" id="8_hgtst"]
@@ -27,6 +26,12 @@
 [ext_resource type="PackedScene" uid="uid://cydal6hnexpca" path="res://Characters/Bandit/Bandit Light.glb" id="25_6ag8u"]
 [ext_resource type="PackedScene" uid="uid://d2ke6gdx0ud7n" path="res://Assets/Guns/Tech Laser Pistol.glb" id="26_0jhtj"]
 [ext_resource type="PackedScene" uid="uid://bhlnwuvg8jobk" path="res://Assets/Guns/Tech Laser Rifle.glb" id="26_b6rho"]
+[ext_resource type="PackedScene" uid="uid://di40otqahku8t" path="res://Items/Spark Soda.glb" id="27_86n5h"]
+[ext_resource type="PackedScene" uid="uid://be84vgl8414dp" path="res://Items/Food Can Plant.glb" id="28_l34xp"]
+[ext_resource type="PackedScene" uid="uid://i82a3xkutv3f" path="res://Items/Food Can Plant 2.glb" id="29_mll42"]
+[ext_resource type="PackedScene" uid="uid://d1g3ocqxaptxl" path="res://Items/Food Can Meat.glb" id="30_7p6sg"]
+[ext_resource type="PackedScene" uid="uid://le4f7yq0ssjd" path="res://Characters/Army/Soldier mk2.glb" id="31_buhd0"]
+[ext_resource type="PackedScene" uid="uid://bxjhq4qokrail" path="res://Characters/Army/soldier Heavy mk2.glb" id="32_mxgjh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ywrmy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -70,11 +75,8 @@ offset_right = 7.0
 offset_bottom = 3.0
 metadata/_edit_use_anchors_ = true
 
-[node name="ukko solttu" parent="." unique_id=589829820 instance=ExtResource("5_qmhdh")]
-transform = Transform3D(-0.22165072, 0, 0.97512615, 0, 1, 0, -0.97512615, 0, -0.22165072, 1.2204809, 0.25448304, 7.414283)
-
 [node name="Gas_Mask" parent="." unique_id=2020315896 instance=ExtResource("6_ojwke")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.16011, 2.1834285, 8.952163)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.16011, 2.1834285, 9.994331)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Gas_Mask" unique_id=229326245]
 
@@ -144,10 +146,10 @@ transform = Transform3D(0.0016383155, 1.0606868e-05, 0.99999875, -0.00019358417,
 transform = Transform3D(0.00094248634, 0, 0.99999946, 0, 1, 0, -0.99999946, 0, 0.00094248634, 7.8500457, 1.0006782, 8.7014675)
 
 [node name="FS Militia Elite" parent="." unique_id=2006703235 instance=ExtResource("22_wxnvn")]
-transform = Transform3D(-0.99973947, 0, 0.022826895, 0, 1, 0, -0.022826895, 0, -0.99973947, 5.100421, 0.25000024, 8.731481)
+transform = Transform3D(-0.99973947, 0, 0.022826895, 0, 1, 0, -0.022826895, 0, -0.99973947, 4.2934737, 0.25000024, 9.364729)
 
 [node name="FS Militia" parent="." unique_id=609333272 instance=ExtResource("23_6qdpa")]
-transform = Transform3D(-0.99967533, 0, -0.025479095, 0, 1, 0, 0.025479095, 0, -0.99967533, 4.434102, 0.25, 8.38477)
+transform = Transform3D(-0.99967533, 0, -0.025479095, 0, 1, 0, 0.025479095, 0, -0.99967533, 3.9141588, 0.25, 9.018019)
 
 [node name="Wooden Crate Large" parent="." unique_id=686683453 instance=ExtResource("23_6ag8u")]
 transform = Transform3D(0.8251825, 0, -0.5648662, 0, 1, 0, 0.5648662, 0, 0.8251825, 12.455494, 0.25, 9.54081)
@@ -156,10 +158,28 @@ transform = Transform3D(0.8251825, 0, -0.5648662, 0, 1, 0, 0.5648662, 0, 0.82518
 transform = Transform3D(-0.004345812, 0, 0.9999905, 0, 1, 0, -0.9999905, 0, -0.004345812, 7.7609982, 0.87675, 8.70486)
 
 [node name="Bandit Light" parent="." unique_id=1034453559 instance=ExtResource("25_6ag8u")]
-transform = Transform3D(-0.9998127, 0, 0.01935442, 0, 1, 0, -0.01935442, 0, -0.9998127, 3.9971595, 0.24999976, 7.93754)
+transform = Transform3D(-0.9998127, 0, 0.01935442, 0, 1, 0, -0.01935442, 0, -0.9998127, 2.051748, 0.25000048, 8.675712)
 
 [node name="Tech Laser Pistol" parent="." unique_id=108490032 instance=ExtResource("26_0jhtj")]
 transform = Transform3D(-0.056553416, 0, 0.9983997, 0, 1, 0, -0.9983997, 0, -0.056553416, 8.50325, 0.73396957, 8.660551)
 
 [node name="Tech Laser Rifle" parent="." unique_id=531245859 instance=ExtResource("26_b6rho")]
 transform = Transform3D(-0.04222441, 0, 0.99910814, 0, 1, 0, -0.99910814, 0, -0.04222441, 8.225295, 2.0070999, 8.654424)
+
+[node name="Spark Soda" parent="." unique_id=768511189 instance=ExtResource("27_86n5h")]
+transform = Transform3D(-0.8812458, 0, -0.47265851, 0, 1, 0, 0.47265851, 0, -0.8812458, 7.729053, 0.24999994, 8.555715)
+
+[node name="Food Can Plant" parent="." unique_id=1094603882 instance=ExtResource("28_l34xp")]
+transform = Transform3D(-0.97038853, 0, 0.24154936, 0, 1, 0, -0.24154936, 0, -0.97038853, 7.5283813, 0.24999997, 8.601491)
+
+[node name="Food Can Plant 2" parent="." unique_id=1256016920 instance=ExtResource("29_mll42")]
+transform = Transform3D(-0.9374037, 0, -0.34824485, 0, 1, 0, 0.34824485, 0, -0.9374037, 7.2850475, 0.25, 8.578469)
+
+[node name="Food Can Meat" parent="." unique_id=591256776 instance=ExtResource("30_7p6sg")]
+transform = Transform3D(-0.8809072, 0, -0.473289, 0, 1, 0, 0.473289, 0, -0.8809072, 7.4091845, 0.5174583, 8.58014)
+
+[node name="Soldier mk2" parent="." unique_id=1328846411 instance=ExtResource("31_buhd0")]
+transform = Transform3D(-0.9999035, 0, 0.013892354, 0, 1, 0, -0.013892354, 0, -0.9999035, 5.8575144, 0.25448304, 9.050443)
+
+[node name="soldier Heavy mk2" parent="." unique_id=1458253968 instance=ExtResource("32_mxgjh")]
+transform = Transform3D(-0.9999489, 0, 0.01010535, 0, 1, 0, -0.01010535, 0, -0.9999489, 6.289985, 0.25448304, 9.437349)
